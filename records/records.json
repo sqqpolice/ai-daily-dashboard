@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T02:34:49.051Z",
+  "generatedAt": "2026-07-21T02:43:52.091Z",
   "days": [
     {
       "date": "2026-07-12",
@@ -151,7 +151,7 @@
         "isToday": false,
         "usedDate": "2026-07-12",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.843Z"
+        "fetchedAt": "2026-07-21T02:43:51.864Z"
       }
     },
     {
@@ -346,7 +346,7 @@
         "isToday": false,
         "usedDate": "2026-07-13",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.867Z"
+        "fetchedAt": "2026-07-21T02:43:51.890Z"
       }
     },
     {
@@ -552,7 +552,7 @@
         "isToday": false,
         "usedDate": "2026-07-14",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.889Z"
+        "fetchedAt": "2026-07-21T02:43:51.914Z"
       }
     },
     {
@@ -901,7 +901,7 @@
         "isToday": false,
         "usedDate": "2026-07-15",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.911Z"
+        "fetchedAt": "2026-07-21T02:43:51.938Z"
       }
     },
     {
@@ -1228,7 +1228,7 @@
         "isToday": false,
         "usedDate": "2026-07-16",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.932Z"
+        "fetchedAt": "2026-07-21T02:43:51.962Z"
       }
     },
     {
@@ -1599,7 +1599,7 @@
         "isToday": false,
         "usedDate": "2026-07-17",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.954Z"
+        "fetchedAt": "2026-07-21T02:43:51.986Z"
       }
     },
     {
@@ -1849,7 +1849,7 @@
         "isToday": false,
         "usedDate": "2026-07-18",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.976Z"
+        "fetchedAt": "2026-07-21T02:43:52.009Z"
       }
     },
     {
@@ -1918,7 +1918,7 @@
         "isToday": false,
         "usedDate": "2026-07-19",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:48.999Z"
+        "fetchedAt": "2026-07-21T02:43:52.032Z"
       }
     },
     {
@@ -2071,7 +2071,7 @@
         "isToday": false,
         "usedDate": "2026-07-20",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:49.022Z"
+        "fetchedAt": "2026-07-21T02:43:52.058Z"
       }
     },
     {
@@ -2387,7 +2387,7 @@
         "isToday": true,
         "usedDate": "2026-07-21",
         "fallback": false,
-        "fetchedAt": "2026-07-21T02:34:49.042Z"
+        "fetchedAt": "2026-07-21T02:43:52.080Z"
       }
     }
   ]
