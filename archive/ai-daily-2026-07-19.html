@@ -70,6 +70,22 @@
   .nav .nav-all{margin-left:auto;color:var(--brand)}
   @media(max-width:640px){.nav .nav-all{margin-left:0}}
 
+  /* History bar */
+  .hist-toggle{display:inline-flex;align-items:center;gap:6px;margin:0 0 14px;padding:8px 14px;border-radius:11px;cursor:pointer;
+    border:1px solid var(--line);background:var(--panel);color:var(--ink);font-weight:700;font-size:13.5px;box-shadow:var(--shadow);transition:.18s}
+  .hist-toggle:hover{border-color:var(--brand);transform:translateY(-2px)}
+  .histbar{margin:0 0 22px;padding:14px;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+  .hist-title{font-weight:800;font-size:13.5px;color:var(--muted);display:block;margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{display:inline-flex;align-items:center;gap:5px;padding:7px 12px;border-radius:10px;font-size:12.5px;font-weight:600;
+    text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--ink);transition:.16s;font-variant-numeric:tabular-nums}
+  .chip:hover{border-color:var(--brand);background:color-mix(in srgb,var(--brand) 8%,var(--panel2));transform:translateY(-1px)}
+  .chip-home{background:color-mix(in srgb,var(--brand) 12%,var(--panel));border-color:color-mix(in srgb,var(--brand) 30%,var(--line));color:var(--brand)}
+  .histbanner{margin:0 0 20px;padding:10px 16px;border-radius:12px;font-size:13px;font-weight:600;
+    background:color-mix(in srgb,#f59e0b 14%,var(--panel));border:1px solid color-mix(in srgb,#f59e0b 35%,var(--line));color:var(--ink)}
+  .histbanner b{color:#d97706}
+  @media(prefers-color-scheme:dark){.histbanner b{color:#fbbf24}}
+
   /* Sections */
   .sec{margin:30px 0}
   .sec-head{display:flex;align-items:center;gap:12px;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
@@ -123,6 +139,12 @@
   <div class="wrap">
     <header class="hero" id="hero"></header>
     <nav class="nav" id="nav"></nav>
+    <button class="hist-toggle" id="histToggle" type="button">📅 历史日报</button>
+    <div class="histbar" id="histbar" hidden>
+      <span class="hist-title">选择日期查看历史日报（站内直接切换，无需跳走）</span>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="histbanner" id="histbanner" hidden></div>
     <main id="content"></main>
     <footer>
       <span id="foot-meta"></span>
@@ -131,7 +153,8 @@
   </div>
   <div class="toast" id="toast"></div>
 
-  <script type="application/json" id="aihot-data">{"source":{"date":"2026-07-19","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-07-19"},"generatedAt":"2026-07-19T00:00:00.559Z","windowStart":"2026-07-18T00:00:00.000Z","windowEnd":"2026-07-19T00:00:00.000Z","lead":null,"sections":[{"label":"产品发布/更新","items":[{"title":"Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进","summary":"Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10,000 字符）和 zsh 变量下标比较的误判问题。","sourceUrl":"https://github.com/anthropics/claude-code/releases/tag/v2.1.214","sourceName":"Claude Code：GitHub Releases（RSS）","permalink":"https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt"}}]},{"label":"技巧与观点","items":[{"title":"Index Ventures 联合创始人 Neil Rimer 认为 AI 财富将面临“再分配”","summary":"Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临“某种形式的再分配”，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。","sourceUrl":"https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out","sourceName":"TechCrunch：AI（RSS）","permalink":"https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro"}}]}],"flashes":[]},"isToday":false,"usedDate":"2026-07-19","fallback":false,"fetchedAt":"2026-07-21T02:21:07.359Z"}</script>
+  <script type="application/json" id="aihot-data">{"source":{"date":"2026-07-19","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-07-19"},"generatedAt":"2026-07-19T00:00:00.559Z","windowStart":"2026-07-18T00:00:00.000Z","windowEnd":"2026-07-19T00:00:00.000Z","lead":null,"sections":[{"label":"产品发布/更新","items":[{"title":"Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进","summary":"Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10,000 字符）和 zsh 变量下标比较的误判问题。","sourceUrl":"https://github.com/anthropics/claude-code/releases/tag/v2.1.214","sourceName":"Claude Code：GitHub Releases（RSS）","permalink":"https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrpp5dgu0434bisrm2cs33xt"}}]},{"label":"技巧与观点","items":[{"title":"Index Ventures 联合创始人 Neil Rimer 认为 AI 财富将面临“再分配”","summary":"Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临“某种形式的再分配”，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。","sourceUrl":"https://techcrunch.com/2026/07/17/neil-rimer-thinks-the-ai-money-is-coming-back-out","sourceName":"TechCrunch：AI（RSS）","permalink":"https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrpwwjho06djbisr218fe8ro"}}]}],"flashes":[]},"isToday":false,"usedDate":"2026-07-19","fallback":false,"fetchedAt":"2026-07-21T02:34:48.999Z"}</script>
+  <script type="application/json" id="hist-index">[{"date":"2026-07-12","weekday":"周日","total":8,"file":"archive/ai-daily-2026-07-12.html"},{"date":"2026-07-13","weekday":"周一","total":11,"file":"archive/ai-daily-2026-07-13.html"},{"date":"2026-07-14","weekday":"周二","total":12,"file":"archive/ai-daily-2026-07-14.html"},{"date":"2026-07-15","weekday":"周三","total":25,"file":"archive/ai-daily-2026-07-15.html"},{"date":"2026-07-16","weekday":"周四","total":23,"file":"archive/ai-daily-2026-07-16.html"},{"date":"2026-07-17","weekday":"周五","total":27,"file":"archive/ai-daily-2026-07-17.html"},{"date":"2026-07-18","weekday":"周六","total":16,"file":"archive/ai-daily-2026-07-18.html"},{"date":"2026-07-19","weekday":"周日","total":2,"file":"archive/ai-daily-2026-07-19.html"},{"date":"2026-07-20","weekday":"周一","total":8,"file":"archive/ai-daily-2026-07-20.html"},{"date":"2026-07-21","weekday":"周二","total":22,"file":"archive/ai-daily-2026-07-21.html"}]</script>
   <script>
   (function(){
     "use strict";
@@ -237,6 +260,59 @@
     var env=JSON.parse(dataEl.textContent);
     render(env);
 
+    // ---------- 历史日报切换 ----------
+    var TODAY_ENV=env;
+    var HIST_INDEX=JSON.parse(document.getElementById("hist-index").textContent||"[]");
+    var histbar=document.getElementById("histbar");
+    var chips=document.getElementById("chips");
+    var banner=document.getElementById("histbanner");
+    var histToggle=document.getElementById("histToggle");
+
+    function hideBanner(){ banner.hidden=true; banner.innerHTML=""; }
+    function showBanner(d){ banner.hidden=false; banner.innerHTML='📅 正在查看 <b>'+esc(d)+'</b>（历史快照） · 点击「🏠 今日」返回最新'; }
+    function switchTo(e){
+      render(e);
+      if(e===TODAY_ENV || (e.usedDate&&TODAY_ENV.usedDate&&e.usedDate===TODAY_ENV.usedDate)){ hideBanner(); }
+      else { showBanner(e.usedDate||""); }
+    }
+    function chipHome(){
+      var b=document.createElement("button");
+      b.className="chip chip-home"; b.type="button"; b.textContent="🏠 今日";
+      b.onclick=function(){ switchTo(TODAY_ENV); window.scrollTo({top:0,behavior:"smooth"}); };
+      return b;
+    }
+    function buildChipsInline(hist){
+      chips.innerHTML=""; chips.appendChild(chipHome());
+      (hist.days||[]).forEach(function(d){
+        if(d.env&&d.env.usedDate&&TODAY_ENV.usedDate&&d.env.usedDate===TODAY_ENV.usedDate) return;
+        var c=document.createElement("button");
+        c.type="button"; c.className="chip";
+        c.textContent=d.date.slice(5)+" "+d.weekday+" · "+d.total+" 条";
+        c.onclick=function(){ switchTo(d.env); window.scrollTo({top:0,behavior:"smooth"}); };
+        chips.appendChild(c);
+      });
+    }
+    function buildChipsLinks(idx){
+      chips.innerHTML=""; chips.appendChild(chipHome());
+      (idx||[]).forEach(function(d){
+        var a=document.createElement("a");
+        a.className="chip"; a.textContent=d.date.slice(5)+" "+d.weekday+" · "+d.total+" 条";
+        a.href=d.file||("archive/ai-daily-"+d.date+".html"); a.target="_self";
+        chips.appendChild(a);
+      });
+    }
+    function loadHistory(){ return fetch("records/history.json").then(function(r){ if(!r.ok) throw 0; return r.json(); }); }
+    function openHistory(){
+      histbar.hidden=!histbar.hidden;
+      if(histbar.hidden||chips.childElementCount) return;
+      if(location.protocol==="https:"){
+        loadHistory().then(buildChipsInline).catch(function(){ buildChipsLinks(HIST_INDEX); });
+      } else {
+        buildChipsLinks(HIST_INDEX);
+      }
+    }
+    histToggle.addEventListener("click", openHistory);
+
     // refresh (best-effort): refetch latest daily; fallback through CORS proxies
     var btn=document.getElementById("refreshBtn");
     var toast=document.getElementById("toast");
@@ -255,7 +331,7 @@
         if(i>=attempts.length){btn.disabled=false;showToast("刷新失败：浏览器网络/CORS 受限，已保留当前内容");return;}
         tryFetch(attempts[i],{headers:{"User-Agent":"Mozilla/5.0"}}).then(function(r){return r.ok?r.json():Promise.reject("http "+r.status);}).then(function(json){
           var ne={source:json,usedDate:json.date,isToday:false,fallback:true,fetchedAt:new Date().toISOString()};
-          render(ne);btn.disabled=false;showToast("已更新至最新一期（"+json.date+"）");
+          render(ne);TODAY_ENV=ne;hideBanner();btn.disabled=false;showToast("已更新至最新一期（"+json.date+"）");
         }).catch(function(e){next(i+1);});
       })(0);
     });

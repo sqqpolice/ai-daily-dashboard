@@ -12,9 +12,13 @@ const RECORDS = path.join(ROOT, "records");
 fs.mkdirSync(ARCHIVE, { recursive: true });
 fs.mkdirSync(RECORDS, { recursive: true });
 
-// local date (Asia/Shanghai)
+// local date in Asia/Shanghai (UTC+8), manual to avoid Intl/timezone pitfalls
 function dateStr(d) {
-  return new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
+  const sh = new Date(d.getTime() + 8 * 3600 * 1000);
+  const y = sh.getUTCFullYear();
+  const m = String(sh.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(sh.getUTCDate()).padStart(2, "0");
+  return y + "-" + m + "-" + day;
 }
 function shift(d, days) { const x = new Date(d); x.setDate(x.getDate() - days); return x; }
 
@@ -22,15 +26,6 @@ async function getJSON(url) {
   const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "application/json" } });
   if (!r.ok) throw new Error("HTTP " + r.status);
   return r.json();
-}
-
-function buildHTML(env) {
-  let tpl = fs.readFileSync(TPL, "utf8");
-  if (!tpl.includes("__DATA__")) throw new Error("template missing __DATA__");
-  const json = JSON.stringify(env).replace(/</g, "\\u003c");
-  const out = tpl.replace("__DATA__", json);
-  if (out.includes("__DATA__")) throw new Error("placeholder not replaced");
-  return out;
 }
 
 function sectionStats(data) {
@@ -62,29 +57,48 @@ async function main() {
       continue;
     }
     const env = { source: data, isToday: date === todayStr, usedDate: data.date || date, fallback: false, fetchedAt: new Date().toISOString() };
-    const html = buildHTML(env);
-    const file = path.join(ARCHIVE, `ai-daily-${date}.html`);
-    fs.writeFileSync(file, html, "utf8");
     const { secs, total } = sectionStats(data);
-    console.log(`[ok] ${date}: ${total} 条 -> archive/ai-daily-${date}.html`);
-    records.push({ date, weekday: weekday(date), available: true, total, sections: secs, file: `archive/ai-daily-${date}.html` });
+    console.log(`[ok] ${date}: ${total} 条`);
+    records.push({ date, weekday: weekday(date), available: true, total, sections: secs, file: `archive/ai-daily-${date}.html`, env });
   }
+
+  // lightweight index for in-page links (file:// fallback)
+  const histIndex = records.filter(r => r.available).map(r => ({ date: r.date, weekday: r.weekday, total: r.total, file: r.file }));
+  let tplBase = fs.readFileSync(TPL, "utf8");
+  if (!tplBase.includes("__HIST__")) throw new Error("template missing __HIST__");
+  tplBase = tplBase.replace("__HIST__", JSON.stringify(histIndex));
+  if (tplBase.includes("__HIST__")) throw new Error("hist placeholder not replaced");
+
+  // build one HTML per available day
+  records.forEach(r => {
+    if (!r.available) return;
+    const json = JSON.stringify(r.env).replace(/</g, "\\u003c");
+    const html = tplBase.replace("__DATA__", json);
+    if (html.includes("__DATA__")) throw new Error("data placeholder not replaced for " + r.date);
+    fs.writeFileSync(path.join(ARCHIVE, `ai-daily-${r.date}.html`), html, "utf8");
+  });
 
   // today's dashboard is the main page (copy to root index)
   const todays = records.find(r => r.date === todayStr && r.available);
   if (todays) {
-    const src = path.join(ARCHIVE, `ai-daily-${todayStr}.html`);
-    fs.copyFileSync(src, path.join(ROOT, "ai-daily-dashboard.html"));
+    fs.copyFileSync(path.join(ARCHIVE, `ai-daily-${todayStr}.html`), path.join(ROOT, "ai-daily-dashboard.html"));
     console.log(`[ok] refreshed root ai-daily-dashboard.html (${todayStr})`);
   }
 
   // records.json
   fs.writeFileSync(path.join(RECORDS, "records.json"), JSON.stringify({ generatedAt: new Date().toISOString(), days: records }, null, 2), "utf8");
 
+  // history.json (full env, for in-page inline switching on the live site)
+  const history = {
+    generatedAt: new Date().toISOString(),
+    days: records.filter(r => r.available).map(r => ({ date: r.date, weekday: r.weekday, total: r.total, sections: r.sections, file: r.file, env: r.env }))
+  };
+  fs.writeFileSync(path.join(RECORDS, "history.json"), JSON.stringify(history), "utf8");
+
   // records.md
   const avail = records.filter(r => r.available);
   const totalAll = avail.reduce((a, r) => a + r.total, 0);
-  let md = `# AI 日报 · 近 10 天记录\n\n`;
+  let md = "# AI 日报 · 近 10 天记录\n\n";
   md += `> 自动生成于 ${new Date().toISOString().replace("T", " ").slice(0, 16)} · 数据源：AI HOT（aihot.virxact.com）\n\n`;
   md += `**统计**：近 10 天共 ${records.length} 天，其中 ${avail.length} 天有收录，累计 ${totalAll} 条。\n\n`;
   md += `| 日期 | 星期 | 总条数 | 模型 | 产品 | 行业 | 论文 | 观点 | 页面 |\n`;
@@ -96,7 +110,7 @@ async function main() {
     md += `| ${r.date} | ${r.weekday} | ${r.total} | ${f("模型发布/更新")} | ${f("产品发布/更新")} | ${f("行业动态")} | ${f("论文研究")} | ${f("技巧与观点")} | [查看](archive/ai-daily-${r.date}.html) |\n`;
   }
   fs.writeFileSync(path.join(RECORDS, "records.md"), md, "utf8");
-  console.log(`[done] records: ${avail.length}/${records.length} days available, ${totalAll} items total`);
+  console.log(`[done] records: ${avail.length}/${records.length} days available, ${totalAll} items total; history.json + md written`);
 }
 
 main().catch(e => { console.error("[fatal]", e); process.exit(1); });
