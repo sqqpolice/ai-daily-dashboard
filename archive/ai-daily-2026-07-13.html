@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI HOT 每日晨报</title>
+<style>
+  :root{
+    --bg:#eef2f9; --bg2:#f7f9fc; --panel:#ffffff; --panel2:#f8fafc;
+    --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --line2:#eef2f7;
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);
+    --shadow-hi:0 6px 18px rgba(15,23,42,.10),0 18px 48px rgba(15,23,42,.12);
+    --brand:#6366f1; --brand2:#0ea5e9;
+    --radius:18px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0b1020; --bg2:#0e1426; --panel:#141b30; --panel2:#101728;
+      --ink:#e6ecf7; --muted:#94a3b8; --line:#243049; --line2:#1c2438;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+      --shadow-hi:0 8px 24px rgba(0,0,0,.45),0 20px 50px rgba(0,0,0,.5);
+      --brand:#818cf8; --brand2:#38bdf8;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+    color:var(--ink); font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px 64px}
+
+  /* Hero */
+  .hero{
+    position:relative; overflow:hidden; margin:22px 0 14px; padding:34px 32px 30px;
+    border-radius:26px; color:#fff;
+    background:
+      radial-gradient(1100px 320px at 12% -20%, rgba(99,102,241,.55), transparent 60%),
+      radial-gradient(900px 320px at 95% 0%, rgba(14,165,233,.45), transparent 55%),
+      linear-gradient(135deg,#4f46e5 0%,#0ea5e9 60%,#22d3ee 100%);
+    box-shadow:var(--shadow-hi);
+  }
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 80% 120%,rgba(255,255,255,.18),transparent 60%);pointer-events:none}
+  .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:.5px;font-size:14px;opacity:.95;
+    display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(255,255,255,.10)}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.25)}
+  .hero-date{font-size:14px;opacity:.95;font-weight:600}
+  .hero-title{margin:18px 0 6px;font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:1px;line-height:1.1}
+  .hero-sub{margin:0;font-size:15px;opacity:.95}
+  .hero-sub strong{font-size:20px}
+  .hero-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:22px}
+  .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:12px 10px;text-align:center;backdrop-filter:blur(6px)}
+  .stat-ico{font-size:20px;display:block;line-height:1}
+  .stat-num{display:block;font-size:26px;font-weight:800;margin:4px 0 2px}
+  .stat-lbl{display:block;font-size:11.5px;opacity:.92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hero-note{margin-top:18px;font-size:12.5px;opacity:.85;display:flex;gap:14px;flex-wrap:wrap}
+  .hero-note .pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:3px 10px}
+  .hero-note .warn{background:rgba(251,191,36,.22);border-color:rgba(251,191,36,.5);color:#fff}
+
+  /* Nav */
+  .nav{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+    margin:14px 0 22px;padding:10px;background:color-mix(in srgb,var(--panel) 86%,transparent);
+    border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+  .nav a{display:inline-flex;align-items:center;gap:6px;padding:8px 13px;border-radius:11px;
+    color:var(--ink);text-decoration:none;font-size:13.5px;font-weight:600;border:1px solid transparent;transition:.18s}
+  .nav a:hover{background:var(--panel2);border-color:var(--line)}
+  .nav a b{font-variant-numeric:tabular-nums;background:var(--line2);border-radius:7px;padding:1px 7px;font-size:12px;color:var(--muted)}
+  .nav .nav-all{margin-left:auto;color:var(--brand)}
+  @media(max-width:640px){.nav .nav-all{margin-left:0}}
+
+  /* Sections */
+  .sec{margin:30px 0}
+  .sec-head{display:flex;align-items:center;gap:12px;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .sec-ico{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:11px;font-size:19px;
+    background:color-mix(in srgb,var(--c) 16%,transparent);border:1px solid color-mix(in srgb,var(--c) 30%,transparent)}
+  .sec-head h2{margin:0;font-size:21px;font-weight:800;letter-spacing:.3px}
+  .sec-count{margin-left:auto;font-size:13px;font-weight:700;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);
+    border:1px solid color-mix(in srgb,var(--c) 28%,transparent);border-radius:999px;padding:3px 12px;font-variant-numeric:tabular-nums}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+  .card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 20px 16px;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s,border-color .18s;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c);opacity:.85}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi);border-color:color-mix(in srgb,var(--c) 45%,var(--line))}
+  .card-num{position:absolute;top:14px;right:16px;font-size:13px;font-weight:800;color:var(--c);
+    background:color-mix(in srgb,var(--c) 12%,transparent);border:1px solid color-mix(in srgb,var(--c) 26%,transparent);
+    border-radius:9px;min-width:30px;height:30px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+  .card-title{margin:0 38px 8px 0;font-size:16.5px;line-height:1.4;font-weight:700}
+  .card-title a{color:var(--ink);text-decoration:none}
+  .card-title a:hover{color:var(--c);text-decoration:underline;text-underline-offset:3px}
+  .card-sum{margin:0 0 14px;font-size:13.5px;color:var(--muted);line-height:1.65}
+  .card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px;border-top:1px solid var(--line2)}
+  .src{font-size:12px;color:var(--muted);display:inline-flex;align-items:center;gap:6px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .src .badge{background:var(--line2);border-radius:6px;padding:1px 7px;font-weight:600;color:var(--ink)}
+  .lnk{font-size:12.5px;font-weight:700;color:var(--c);text-decoration:none;white-space:nowrap;
+    display:inline-flex;align-items:center;gap:3px;padding:5px 10px;border-radius:9px;border:1px solid color-mix(in srgb,var(--c) 30%,transparent);background:color-mix(in srgb,var(--c) 8%,transparent)}
+  .lnk:hover{background:color-mix(in srgb,var(--c) 16%,transparent)}
+
+  .empty{background:var(--panel2);border:1px dashed var(--line);border-radius:14px;padding:22px;text-align:center;color:var(--muted);font-size:13.5px}
+
+  /* Footer */
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12.5px}
+  .refresh{display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:1px solid var(--line);background:var(--panel);
+    color:var(--ink);font-weight:700;font-size:13px;padding:9px 15px;border-radius:11px;box-shadow:var(--shadow);transition:.18s}
+  .refresh:hover{transform:translateY(-2px);box-shadow:var(--shadow-hi);border-color:var(--brand)}
+  .refresh:disabled{opacity:.6;cursor:progress;transform:none}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;
+    background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:13px;font-weight:600;
+    box-shadow:var(--shadow-hi);transition:.25s;pointer-events:none;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  noscript{display:block;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:14px;color:var(--muted)}
+  @media(max-width:680px){
+    .hero-stats{grid-template-columns:repeat(2,1fr)}
+    .hero{padding:26px 20px}
+    .wrap{padding:0 14px 48px}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" id="hero"></header>
+    <nav class="nav" id="nav"></nav>
+    <main id="content"></main>
+    <footer>
+      <span id="foot-meta"></span>
+      <button class="refresh" id="refreshBtn">⟳ 刷新数据</button>
+    </footer>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script type="application/json" id="aihot-data">{"source":{"date":"2026-07-13","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-07-13"},"generatedAt":"2026-07-13T00:00:00.605Z","windowStart":"2026-07-12T00:00:00.000Z","windowEnd":"2026-07-13T00:00:00.000Z","lead":null,"sections":[{"label":"模型发布/更新","items":[{"title":"腾讯混元发布Hy3模型：295B参数MoE架构，Agent向LLM定位，已集成微信服务10亿+用户","summary":"腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。","sourceUrl":"https://x.com/AYi_AInotes/status/2076341952023310580","sourceName":"X：阿易 AI Notes (@AYi_AInotes)","permalink":"https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmri0lo1e00irbixecx7cj2f5"}}]},{"label":"产品发布/更新","items":[{"title":"Mesh LLM：在 iroh 上进行分布式人工智能计算","summary":"Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称“Skippy”）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost:9337/v1` 提供服务。","sourceUrl":"https://www.iroh.computer/blog/mesh-llm","sourceName":"Hacker News 热门（buzzing.cc 中文翻译）","permalink":"https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrh78s5t00w5bir7mozf8oyb"}},{"title":"Codex与ChatGPT Work多项更新：取消5小时限制","summary":"早上好。过去48小时里，Codex和ChatGPT Work非常忙碌！三项重要更新： - 暂时取消所有Plus、Business和Pro计划的5小时使用限制 - 正在推出变更，使GPT 5.6 Sol整体更高效，这将体现在使用量减少上，从而让你能走得更远。具体影响待量化后公布 - 我们已达到600万活跃用户，并将在接下来一小时内进行使用量重置 去创造吧。","sourceUrl":"https://x.com/thsottiaux/status/2076365965915467978","sourceName":"X：Tibo (@thsottiaux)","permalink":"https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmri4o4kx00qcbi3hqxj8rxqd"}},{"title":"Mindwalk：在代码库 3D 地图上回放编码代理会话","summary":"Mindwalk 是一款可视化工具，可将 Claude Code 和 Codex 的会话日志在代码库的 3D 地图上回放。它将仓库绘制成夜间地图，代理搜索、读取和编辑过的文件会发光，未触及区域保持黑暗，让用户一眼看清代理对任务的理解范围。单个 Go 二进制文件即可运行，所有会话数据完全本地处理，不会离开机器。支持树状图/地形图两种视图，文件触达状态分为未访问、已查看、已读取、已编辑四种颜色标记。播放界面包含错误率、文件修改量等摩擦信号面板，以及上下文压缩、子代理启动、用户交互等时间轴标记。支持键盘快捷键控制播放速度、跳转编辑点或错误点。","sourceUrl":"https://github.com/cosmtrek/mindwalk","sourceName":"Hacker News 热门（buzzing.cc 中文翻译）","permalink":"https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrhvwe6k00y7biidjabepmem"}}]},{"label":"行业动态","items":[{"title":"苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划","summary":"苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。","sourceUrl":"https://www.ithome.com/0/975/666.htm","sourceName":"IT之家（RSS）","permalink":"https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrh8o88501e4bir7wzxmfpfm"}}]},{"label":"论文研究","items":[{"title":"OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想","summary":"OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题“循环双覆盖猜想”的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科“未解决数学问题”列表中的难题。","sourceUrl":"https://www.ithome.com/0/975/646.htm","sourceName":"IT之家（RSS）","permalink":"https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrh4d5cj009ubir7yazlez7q"}}]},{"label":"技巧与观点","items":[{"title":"纳德拉提出“反向信息悖论”：企业使用AI时需保护自身知识","summary":"微软CEO萨提亚·纳德拉提出“反向信息悖论”：AI时代，买家为使用AI支付金钱，同时必须暴露专有知识（提示词、工具使用、纠正反馈等），这些“智力废气”被模型学习，导致信息不对称向卖家倾斜。企业需要真正的信任边界，确保自身数据、痕迹、评估、适配权重和记忆在边界内积累，未经同意不得外泄。纳德拉呼吁企业拥有私有评估、保留组织记忆所有权，并主张企业应有权使用模型输出微调或训练自有模型，以控制自身学习循环。","sourceUrl":"https://x.com/satyanadella/status/2076323181154230284","sourceName":"X：Satya Nadella (@satyanadella)","permalink":"https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrhyer8a01q3biidlr8xr6rm"}},{"title":"Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法","summary":"用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。","sourceUrl":"https://x.com/thsottiaux/status/2076119366647894371","sourceName":"X：Tibo (@thsottiaux)","permalink":"https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrh57xvj00gvbir7awab8dgb"}},{"title":"xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史","summary":"对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件——即使提示“不要读取任何文件”，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces …","sourceUrl":"https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547","sourceName":"Hacker News 热门（buzzing.cc 中文翻译）","permalink":"https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrhagju201pqbir7t0tnsgfy"}},{"title":"OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论","summary":"OpenAI CEO Sam Altman 表示，他“相当确信”AI 迄今为止净创造了就业，并承认“这并非我预期”。此前他曾警告 AI 影响可能快得“有点吓人”。Anthropic CEO Dario Amodei 也修正了早期言论，将自动化描述为生产力倍增器而非岗位杀手。然而，多项研究未发现 AI 对整体生产力或劳动力市场产生显著影响。一项多校联合研究指出，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。耶鲁预算实验室也未发现与 AI 相关的就业市场变化。","sourceUrl":"https://the-decoder.com/openai-ceo-altman-is-now-pretty-sure-ai-is-net-job-creating-which-is-quite-the-pivot-from-predicting-mass-layoffs","sourceName":"The Decoder：AI News（RSS）","permalink":"https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmrhlbx2v01a4bimnlcgw5m7y"}},{"title":"开源模型面临未来6个月的生存考验","summary":"美国白宫正讨论通过新行政令管理开源模型，最可能在未来6个月内禁止或无限期延迟能力接近GPT 5.5、Claude Opus 4.8或GLM-5.2水平的开源权重模型发布。Anthropic主导的反中国模型政治运动以知识蒸馏为由推动监管，实质是监管捕获。Reflection AI代表在相关会议上主张开源模型应基于能力获得豁免，但该公司尚未发布公开模型。","sourceUrl":"https://www.interconnects.ai/p/6-months-to-live-for-open-models","sourceName":"Nathan Lambert：Interconnects（RSS）","permalink":"https://aihot.virxact.com/items/cmri2qrwo00arbi3hecomc7jd","attribution":{"source":"AI HOT","canonical":"https://aihot.virxact.com/items/cmri2qrwo00arbi3hecomc7jd"}}]}],"flashes":[]},"isToday":false,"usedDate":"2026-07-13","fallback":false,"fetchedAt":"2026-07-21T02:21:06.636Z"}</script>
+  <script>
+  (function(){
+    "use strict";
+    var CANON=[
+      {key:"ai-models",  label:"模型发布/更新", icon:"🚀", color:"#6366f1"},
+      {key:"ai-products",label:"产品发布/更新", icon:"🧰", color:"#0ea5e9"},
+      {key:"industry",   label:"行业动态",     icon:"🌐", color:"#10b981"},
+      {key:"paper",      label:"论文研究",     icon:"📄", color:"#f59e0b"},
+      {key:"tip",        label:"技巧与观点",   icon:"💡", color:"#ec4899"}
+    ];
+    var LABEL2KEY={"模型发布/更新":"ai-models","产品发布/更新":"ai-products","行业动态":"industry","论文研究":"paper","技巧与观点":"tip"};
+    var WEEK=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+
+    function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+    function fmtDate(str){if(!str)return"";var p=String(str).split("-");if(p.length<3)return str;return (+p[0])+"年"+(+p[1])+"月"+(+p[2])+"日";}
+    function weekday(str){var p=String(str).split("-").map(Number);if(p.length<3)return"";return WEEK[new Date(p[0],p[1]-1,p[2]).getDay()];}
+
+    function normalize(env){
+      var d=env.source||{};
+      var byLabel={};(d.sections||[]).forEach(function(s){if(s&&s.label)byLabel[s.label]=s;});
+      var secs=CANON.map(function(c){
+        var s=byLabel[c.label];
+        var items=(s&&Array.isArray(s.items))?s.items:[];
+        return {key:c.key,label:c.label,icon:c.icon,color:c.color,items:items.slice()};
+      });
+      (d.sections||[]).forEach(function(s){if(s&&s.label&&!LABEL2KEY[s.label]){secs.push({key:"extra-"+secs.length,label:s.label,icon:"📰",color:"#64748b",items:(s.items||[]).slice()});}});
+      var n=0;secs.forEach(function(sec){sec.items.forEach(function(it){it._n=++n;});});
+      return {secs:secs,total:n,raw:d,env:env};
+    }
+
+    function renderHero(m){
+      var d=m.raw, env=m.env;
+      var dateStr=env.usedDate||d.date||"";
+      var stats=m.secs.map(function(s){
+        return '<div class="stat" style="--c:'+s.color+'">'
+          +'<span class="stat-ico">'+s.icon+'</span>'
+          +'<span class="stat-num">'+s.items.length+'</span>'
+          +'<span class="stat-lbl">'+esc(s.label)+'</span></div>';
+      }).join("");
+      var note='<span class="pill">数据日期：'+esc(dateStr)+(weekday(dateStr)?' '+weekday(dateStr):'')+'</span>';
+      if(d.windowStart&&d.windowEnd){note+='<span class="pill">窗口：'+esc(d.windowStart.slice(0,10))+' → '+esc(d.windowEnd.slice(0,10))+'</span>';}
+      if(d.generatedAt){note+='<span class="pill">生成于 '+esc(d.generatedAt.replace('T',' ').slice(0,16))+' UTC</span>';}
+      if(env.fallback){note+='<span class="warn">⚠ 当日日报尚未生成，已回退至最近一期（'+esc(dateStr)+'）</span>';}
+      return '<div class="hero-top">'
+        +'<span class="brand"><span class="dot"></span>AI HOT · 每日晨报</span>'
+        +'<span class="hero-date">'+fmtDate(dateStr)+(weekday(dateStr)?' '+weekday(dateStr):'')+'</span></div>'
+        +'<h1 class="hero-title">AI 日报</h1>'
+        +'<p class="hero-sub">今日共 <strong>'+m.total+'</strong> 条 · 覆盖 模型 / 产品 / 行业 / 论文 / 观点 五大版块</p>'
+        +'<div class="hero-stats">'+stats+'</div>'
+        +'<div class="hero-note">'+note+'</div>';
+    }
+
+    function renderNav(m){
+      var links=m.secs.map(function(s){
+        return '<a href="#sec-'+s.key+'">'+s.icon+' '+esc(s.label)+' <b>'+s.items.length+'</b></a>';
+      }).join("");
+      return links+'<a href="#hero" class="nav-all">全部 <b>'+m.total+'</b></a>';
+    }
+
+    function renderContent(m){
+      return m.secs.map(function(s){
+        var body;
+        if(s.items.length===0){
+          body='<div class="empty">今日暂未收录「'+esc(s.label)+'」版块内容</div>';
+        }else{
+          body='<div class="grid">'+s.items.map(function(it){
+            var title=esc(it.title||"(无标题)");
+            var permalink=esc(it.permalink||it.sourceUrl||"#");
+            var srcUrl=esc(it.sourceUrl||it.permalink||"#");
+            var srcName=esc(it.sourceName||"AI HOT");
+            return '<article class="card" style="--c:'+s.color+'">'
+              +'<div class="card-num">'+it._n+'</div>'
+              +'<h3 class="card-title"><a href="'+permalink+'" target="_blank" rel="noopener">'+title+'</a></h3>'
+              +'<p class="card-sum">'+esc(it.summary||"")+'</p>'
+              +'<div class="card-foot"><span class="src"><span class="badge">'+srcName+'</span></span>'
+              +'<a class="lnk" href="'+srcUrl+'" target="_blank" rel="noopener">查看原文 ↗</a></div>'
+              +'</article>';
+          }).join("")+'</div>';
+        }
+        return '<section class="sec" id="sec-'+s.key+'">'
+          +'<div class="sec-head" style="--c:'+s.color+'">'
+          +'<span class="sec-ico">'+s.icon+'</span>'
+          +'<h2>'+esc(s.label)+'</h2>'
+          +'<span class="sec-count">'+s.items.length+' 条</span></div>'
+          +body+'</section>';
+      }).join("");
+    }
+
+    function render(env){
+      var m=normalize(env);
+      document.getElementById("hero").innerHTML=renderHero(m);
+      document.getElementById("nav").innerHTML=renderNav(m);
+      document.getElementById("content").innerHTML=renderContent(m);
+      var foot='数据来源：AI HOT（aihot.virxact.com）';
+      if(env.fetchedAt)foot+=' · 拉取于 '+esc(env.fetchedAt.replace('T',' ').slice(0,16));
+      document.getElementById("foot-meta").textContent=foot;
+      document.title='AI HOT 晨报 · '+(env.usedDate||"");
+      return m;
+    }
+
+    // initial render
+    var dataEl=document.getElementById("aihot-data");
+    var env=JSON.parse(dataEl.textContent);
+    render(env);
+
+    // refresh (best-effort): refetch latest daily; fallback through CORS proxies
+    var btn=document.getElementById("refreshBtn");
+    var toast=document.getElementById("toast");
+    var toastT;
+    function showToast(msg){toast.textContent=msg;toast.classList.add("show");clearTimeout(toastT);toastT=setTimeout(function(){toast.classList.remove("show");},2600);}
+    function tryFetch(url,opts){return fetch(url,opts);}
+    btn.addEventListener("click",function(){
+      btn.disabled=true;showToast("正在刷新…");
+      var direct="https://aihot.virxact.com/api/public/daily";
+      var proxies=[
+        "https://api.allorigins.win/raw?url="+encodeURIComponent(direct),
+        "https://corsproxy.io/?url="+encodeURIComponent(direct)
+      ];
+      var attempts=[direct].concat(proxies);
+      (function next(i){
+        if(i>=attempts.length){btn.disabled=false;showToast("刷新失败：浏览器网络/CORS 受限，已保留当前内容");return;}
+        tryFetch(attempts[i],{headers:{"User-Agent":"Mozilla/5.0"}}).then(function(r){return r.ok?r.json():Promise.reject("http "+r.status);}).then(function(json){
+          var ne={source:json,usedDate:json.date,isToday:false,fallback:true,fetchedAt:new Date().toISOString()};
+          render(ne);btn.disabled=false;showToast("已更新至最新一期（"+json.date+"）");
+        }).catch(function(e){next(i+1);});
+      })(0);
+    });
+  })();
+  </script>
+</body>
+</html>

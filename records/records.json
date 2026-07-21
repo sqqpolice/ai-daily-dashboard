@@ -1,0 +1,275 @@
+{
+  "generatedAt": "2026-07-21T02:21:07.428Z",
+  "days": [
+    {
+      "date": "2026-07-12",
+      "weekday": "周日",
+      "available": true,
+      "total": 8,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 2
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 1
+        },
+        {
+          "label": "行业动态",
+          "count": 4
+        },
+        {
+          "label": "技巧与观点",
+          "count": 1
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-12.html"
+    },
+    {
+      "date": "2026-07-13",
+      "weekday": "周一",
+      "available": true,
+      "total": 11,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 1
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 3
+        },
+        {
+          "label": "行业动态",
+          "count": 1
+        },
+        {
+          "label": "论文研究",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 5
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-13.html"
+    },
+    {
+      "date": "2026-07-14",
+      "weekday": "周二",
+      "available": true,
+      "total": 12,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 2
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 1
+        },
+        {
+          "label": "行业动态",
+          "count": 4
+        },
+        {
+          "label": "论文研究",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 4
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-14.html"
+    },
+    {
+      "date": "2026-07-15",
+      "weekday": "周三",
+      "available": true,
+      "total": 25,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 4
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 6
+        },
+        {
+          "label": "行业动态",
+          "count": 6
+        },
+        {
+          "label": "论文研究",
+          "count": 2
+        },
+        {
+          "label": "技巧与观点",
+          "count": 7
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-15.html"
+    },
+    {
+      "date": "2026-07-16",
+      "weekday": "周四",
+      "available": true,
+      "total": 23,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 3
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 7
+        },
+        {
+          "label": "行业动态",
+          "count": 2
+        },
+        {
+          "label": "论文研究",
+          "count": 5
+        },
+        {
+          "label": "技巧与观点",
+          "count": 6
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-16.html"
+    },
+    {
+      "date": "2026-07-17",
+      "weekday": "周五",
+      "available": true,
+      "total": 27,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 1
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 8
+        },
+        {
+          "label": "行业动态",
+          "count": 6
+        },
+        {
+          "label": "论文研究",
+          "count": 4
+        },
+        {
+          "label": "技巧与观点",
+          "count": 8
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-17.html"
+    },
+    {
+      "date": "2026-07-18",
+      "weekday": "周六",
+      "available": true,
+      "total": 16,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 3
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 1
+        },
+        {
+          "label": "行业动态",
+          "count": 2
+        },
+        {
+          "label": "论文研究",
+          "count": 4
+        },
+        {
+          "label": "技巧与观点",
+          "count": 6
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-18.html"
+    },
+    {
+      "date": "2026-07-19",
+      "weekday": "周日",
+      "available": true,
+      "total": 2,
+      "sections": [
+        {
+          "label": "产品发布/更新",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 1
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-19.html"
+    },
+    {
+      "date": "2026-07-20",
+      "weekday": "周一",
+      "available": true,
+      "total": 8,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 4
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 2
+        },
+        {
+          "label": "行业动态",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 1
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-20.html"
+    },
+    {
+      "date": "2026-07-21",
+      "weekday": "周二",
+      "available": true,
+      "total": 22,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 4
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 7
+        },
+        {
+          "label": "行业动态",
+          "count": 3
+        },
+        {
+          "label": "论文研究",
+          "count": 3
+        },
+        {
+          "label": "技巧与观点",
+          "count": 5
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-21.html"
+    }
+  ]
+}
