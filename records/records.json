@@ -1,256 +1,6 @@
 {
-  "generatedAt": "2026-07-27T01:12:42.670Z",
+  "generatedAt": "2026-07-28T01:28:53.569Z",
   "days": [
-    {
-      "date": "2026-07-18",
-      "weekday": "周六",
-      "available": true,
-      "total": 16,
-      "sections": [
-        {
-          "label": "模型发布/更新",
-          "count": 3
-        },
-        {
-          "label": "产品发布/更新",
-          "count": 1
-        },
-        {
-          "label": "行业动态",
-          "count": 2
-        },
-        {
-          "label": "论文研究",
-          "count": 4
-        },
-        {
-          "label": "技巧与观点",
-          "count": 6
-        }
-      ],
-      "file": "archive/ai-daily-2026-07-18.html",
-      "env": {
-        "source": {
-          "date": "2026-07-18",
-          "attribution": {
-            "source": "AI HOT",
-            "canonical": "https://aihot.virxact.com/daily/2026-07-18"
-          },
-          "generatedAt": "2026-07-18T20:18:27.709Z",
-          "windowStart": "2026-07-17T00:00:00.000Z",
-          "windowEnd": "2026-07-18T00:00:00.000Z",
-          "lead": null,
-          "sections": [
-            {
-              "label": "模型发布/更新",
-              "items": [
-                {
-                  "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
-                  "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
-                  "sourceUrl": "https://x.com/AYi_AInotes/status/2077981025905316253",
-                  "sourceName": "X：阿易 AI Notes (@AYi_AInotes)",
-                  "permalink": "https://aihot.virxact.com/items/cmroipdr803rvbito8t018vr1",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmroipdr803rvbito8t018vr1"
-                  }
-                },
-                {
-                  "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
-                  "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32,768 tokens。",
-                  "sourceUrl": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
-                  "sourceName": "MarkTechPost（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmronvv4105bdbitohe86a4un",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmronvv4105bdbitohe86a4un"
-                  }
-                },
-                {
-                  "title": "通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms",
-                  "summary": "通义实验室发布 Wan-Streamer v0.2，这是一款将“听、看、说、演”统一进单个 Transformer 的端到端全模态模型。其端到端响应延迟仅 550ms，输出分辨率从 v0.1 的 192×336 提升至 640×368 @ 25FPS，并采用 Thinker-Performer 双通路架构在提升画质的同时维持了极低延迟。",
-                  "sourceUrl": "https://mp.weixin.qq.com/s/_eaO0wmsiQFGsrE2_zW_Dg",
-                  "sourceName": "公众号：通义实验室（千问）",
-                  "permalink": "https://aihot.virxact.com/items/cmrolz26304oqbito42v7oeaz",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrolz26304oqbito42v7oeaz"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "产品发布/更新",
-              "items": [
-                {
-                  "title": "Claude Code v2.1.212 发布",
-                  "summary": "Claude Code v2.1.212 新增 `/fork` 命令，可将当前对话复制到新后台会话中独立运行。新增会话级 WebSearch 调用上限（默认 200）和子智能体生成上限（默认 200），防止失控循环。MCP 工具调用超过 2 分钟自动移至后台，并修复了计划模式自动执行文件修改命令等多项问题。",
-                  "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-                  "sourceName": "Claude Code：GitHub Releases（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmro7k3fg006ubito30u6rsqw",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmro7k3fg006ubito30u6rsqw"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "行业动态",
-              "items": [
-                {
-                  "title": "Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？",
-                  "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
-                  "sourceUrl": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-                  "sourceName": "The Verge：AI（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmrp97h7o0020biuxh7pzewro",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrp97h7o0020biuxh7pzewro"
-                  }
-                },
-                {
-                  "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
-                  "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
-                  "sourceUrl": "https://www.ithome.com/0/978/277.htm",
-                  "sourceName": "IT之家（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmrove64p07imbitof1v9rzwz",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrove64p07imbitof1v9rzwz"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "论文研究",
-              "items": [
-                {
-                  "title": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
-                  "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
-                  "sourceUrl": "https://x.com/dotey/status/2078172517085085951",
-                  "sourceName": "X：宝玉 (@dotey)",
-                  "permalink": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrp8wsr10bhobitotnd5hzeq"
-                  }
-                },
-                {
-                  "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-                  "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-                  "sourceUrl": "https://schema-harness.github.io/",
-                  "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-                  "permalink": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmropqooe05tqbitodvnqnc6u"
-                  }
-                },
-                {
-                  "title": "美团LongCat发布LoHoSearch：更难搜索智能体基准",
-                  "summary": "美团LongCat推出LoHoSearch，一个基于762万实体维基百科知识图谱自动生成问题的搜索智能体基准，旨在解决BrowseComp等现有基准趋于饱和的问题。在11个前沿模型测试中，最佳得分仅34.74%，远低于当前模型在BrowseComp上约90%的成绩；上下文策略仅带来+6.8个百分点的提升。该基准包含544道问题、11个领域，采用树与图结构，已开源。",
-                  "sourceUrl": "https://x.com/Meituan_LongCat/status/2078119654632124547",
-                  "sourceName": "X：美团 LongCat (@Meituan_LongCat)",
-                  "permalink": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrp0qw3s090ybitorwj6diwi"
-                  }
-                },
-                {
-                  "title": "Apple 研究：Show Me Examples — 从图像集推断视觉概念",
-                  "summary": "Apple 机器学习研究团队提出一种方法，让视觉语言模型（VLM）仅从图像集示例中推断视觉概念，无需文本指令。该方法通过对比示例图像与候选图像，使模型捕捉颜色、纹理等视觉规律，在多个概念推理基准上提升准确率。该研究目前为学术论文，未公布模型或 API 可用性。",
-                  "sourceUrl": "https://machinelearning.apple.com/research/visual-concept-inference",
-                  "sourceName": "Apple Machine Learning Research（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmrpinmua028mbisr48qfxlrz",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrpinmua028mbisr48qfxlrz"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "技巧与观点",
-              "items": [
-                {
-                  "title": "八天四款前沿模型发布，Kimi K3 跻身第三",
-                  "summary": "过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。",
-                  "sourceUrl": "https://x.com/ArtificialAnlys/status/2078165665278730490",
-                  "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
-                  "permalink": "https://aihot.virxact.com/items/cmrp7cwpv0ay9bitoudhrgt7k",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrp7cwpv0ay9bitoudhrgt7k"
-                  }
-                },
-                {
-                  "title": "首届“小有可为”大赛乡村教育一等奖作品“智绘科普”技术拆解",
-                  "summary": "首届“小有可为”大赛乡村教育赛道一等奖作品“智绘科普”采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
-                  "sourceUrl": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
-                  "sourceName": "公众号：通义实验室（千问）",
-                  "permalink": "https://aihot.virxact.com/items/cmrorbywu06cebitoixzgpb5l",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrorbywu06cebitoixzgpb5l"
-                  }
-                },
-                {
-                  "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
-                  "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如“no fluff, no filler, no jargon”这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
-                  "sourceUrl": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-                  "sourceName": "Simon Willison 博客",
-                  "permalink": "https://aihot.virxact.com/items/cmrpy1nvp06pubisrn8ne51v6",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrpy1nvp06pubisrn8ne51v6"
-                  }
-                },
-                {
-                  "title": "生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格",
-                  "summary": "AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。",
-                  "sourceUrl": "https://www.theatlantic.com/technology/2026/07/generative-ai-engineering-disaster/687901",
-                  "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
-                  "permalink": "https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmro8l78w00j5bitou01qowy4"
-                  }
-                },
-                {
-                  "title": "OpenAI 提出 AI 时代记分卡：“有用智能每美元”衡量实际工作价值",
-                  "summary": "OpenAI 提出“Useful Intelligence per Dollar”（有用智能每美元）作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估。",
-                  "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
-                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-                  "permalink": "https://aihot.virxact.com/items/cmrozfoiv08mhbitofbllzxl4",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrozfoiv08mhbitofbllzxl4"
-                  }
-                },
-                {
-                  "title": "AI 时代“小需求”的成本逻辑变了：GitHub 博客谈工程决策新范式",
-                  "summary": "工程师对小型功能请求的决策成本已超过代码实现成本。AI 智能体可在会议预热时间内生成首个补丁，将抽象的“是否在范围内”争论转化为可审查的具体产物。关键区分在于：代码生成便宜不等于维护便宜，只有人类能自信审查并承担长期责任的变更才算低成本。",
-                  "sourceUrl": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed",
-                  "sourceName": "GitHub Blog",
-                  "permalink": "https://aihot.virxact.com/items/cmrp7vlhg0b51bito6tthz37e",
-                  "attribution": {
-                    "source": "AI HOT",
-                    "canonical": "https://aihot.virxact.com/items/cmrp7vlhg0b51bito6tthz37e"
-                  }
-                }
-              ]
-            }
-          ],
-          "flashes": []
-        },
-        "isToday": false,
-        "usedDate": "2026-07-18",
-        "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:41.605Z"
-      }
-    },
     {
       "date": "2026-07-19",
       "weekday": "周日",
@@ -317,7 +67,7 @@
         "isToday": false,
         "usedDate": "2026-07-19",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:41.643Z"
+        "fetchedAt": "2026-07-28T01:28:52.684Z"
       }
     },
     {
@@ -470,7 +220,7 @@
         "isToday": false,
         "usedDate": "2026-07-20",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:41.854Z"
+        "fetchedAt": "2026-07-28T01:28:52.921Z"
       }
     },
     {
@@ -786,7 +536,7 @@
         "isToday": false,
         "usedDate": "2026-07-21",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:41.963Z"
+        "fetchedAt": "2026-07-28T01:28:52.996Z"
       }
     },
     {
@@ -1201,7 +951,7 @@
         "isToday": false,
         "usedDate": "2026-07-22",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.079Z"
+        "fetchedAt": "2026-07-28T01:28:53.161Z"
       }
     },
     {
@@ -1519,7 +1269,7 @@
         "isToday": false,
         "usedDate": "2026-07-23",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.134Z"
+        "fetchedAt": "2026-07-28T01:28:53.248Z"
       }
     },
     {
@@ -1758,7 +1508,7 @@
         "isToday": false,
         "usedDate": "2026-07-24",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.516Z"
+        "fetchedAt": "2026-07-28T01:28:53.340Z"
       }
     },
     {
@@ -2030,7 +1780,7 @@
         "isToday": false,
         "usedDate": "2026-07-25",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.564Z"
+        "fetchedAt": "2026-07-28T01:28:53.376Z"
       }
     },
     {
@@ -2079,7 +1829,7 @@
         "isToday": false,
         "usedDate": "2026-07-26",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.648Z"
+        "fetchedAt": "2026-07-28T01:28:53.463Z"
       }
     },
     {
@@ -2198,10 +1948,260 @@
           ],
           "flashes": []
         },
-        "isToday": true,
+        "isToday": false,
         "usedDate": "2026-07-27",
         "fallback": false,
-        "fetchedAt": "2026-07-27T01:12:42.659Z"
+        "fetchedAt": "2026-07-28T01:28:53.554Z"
+      }
+    },
+    {
+      "date": "2026-07-28",
+      "weekday": "周二",
+      "available": true,
+      "total": 16,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 2
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 2
+        },
+        {
+          "label": "行业动态",
+          "count": 3
+        },
+        {
+          "label": "论文研究",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 8
+        }
+      ],
+      "file": "archive/ai-daily-2026-07-28.html",
+      "env": {
+        "source": {
+          "date": "2026-07-28",
+          "attribution": {
+            "source": "AI HOT",
+            "canonical": "https://aihot.virxact.com/daily/2026-07-28"
+          },
+          "generatedAt": "2026-07-28T00:00:49.292Z",
+          "windowStart": "2026-07-27T00:00:00.000Z",
+          "windowEnd": "2026-07-28T00:00:00.000Z",
+          "lead": null,
+          "sections": [
+            {
+              "label": "模型发布/更新",
+              "items": [
+                {
+                  "title": "Kimi K3 开源：2.8T MoE 模型与技术报告",
+                  "summary": "Kimi 发布其最强模型 Kimi K3，这是一个 2.8T 参数的 MoE 模型，具备原生视觉理解和 1M token 上下文窗口。新架构实现了每单位计算 2.5 倍的智能提升。除模型权重外，Kimi 还开源了高性能注意力内核、MoE 通信库及大规模智能体运行环境基础设施。",
+                  "sourceUrl": "https://x.com/Kimi_Moonshot/status/2081760186235289764",
+                  "sourceName": "X：Kimi.ai (@Kimi_Moonshot)",
+                  "permalink": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3dxit00betro3fiwkotg0j"
+                  }
+                },
+                {
+                  "title": "Kimi K3 上线 Modal，支持无损加速推理",
+                  "summary": "很高兴 @modal 成为 Kimi K3 的 Day 0 发布合作伙伴！ 他们为 K3 的架构训练了自定义 DFlash 投机器，实现更快推理且无质量损失。",
+                  "sourceUrl": "https://x.com/Kimi_Moonshot/status/2081767591887122564",
+                  "sourceName": "X：Kimi.ai (@Kimi_Moonshot)",
+                  "permalink": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3f0d9200b8rondo4rsvd7o"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "产品发布/更新",
+              "items": [
+                {
+                  "title": "Kimi 发布视觉感知基准 PerceptionBench",
+                  "summary": "Kimi.ai 发布 PerceptionBench，一个从当前前沿模型在 42 个基准上的失败模式中归纳出的视觉感知基准。该基准将视觉感知拆解为 10 种原子能力，并构建了 3000 道验证题，每道题只考察单一感知能力，无需推理或外部知识。",
+                  "sourceUrl": "https://x.com/Kimi_Moonshot/status/2081813202514681878",
+                  "sourceName": "X：Kimi.ai (@Kimi_Moonshot)",
+                  "permalink": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3lggqj00c0roskhu1r5f09"
+                  }
+                },
+                {
+                  "title": "SGLang 和 Miles 为月之暗面 2.8T 参数 Kimi K3 模型提供发布当日支持",
+                  "summary": "SGLang 和 Miles 为月之暗面开源的 2.8T 参数模型 Kimi K3 提供发布当日支持，分别负责推理和 RL 训练。K3 采用 69 层 KDA 线性注意力与 24 层 MLA 交错的混合架构，在 SGLang 上单卡 batch-1 解码速度达约 113 tok/s，结合 DSpark 推测解码可达约 423 tok/s。",
+                  "sourceUrl": "https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support",
+                  "sourceName": "LMSYS：Blog（Chatbot Arena 团队）",
+                  "permalink": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3ivlee000oroiy8dntgvq9"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "行业动态",
+              "items": [
+                {
+                  "title": "Google AI Overviews 搜索结果出现率升至43%",
+                  "summary": "Google AI Overviews 在搜索结果中的出现率一年内从15%升至43%，AI Mode月访问量从1.26亿增至2.79亿。用户搜索长度增加，正从短关键词转向更长的自然对话式查询。",
+                  "sourceUrl": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows",
+                  "sourceName": "TechCrunch：AI（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3fuyes00mjrond2ldww2oa"
+                  }
+                },
+                {
+                  "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+                  "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+                  "sourceUrl": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+                  "sourceName": "NVIDIA Blog（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3fbu4z00h2rondcoqgyozg"
+                  }
+                },
+                {
+                  "title": "Cognizant 与 Anthropic 扩大合作，成为 Claude Partner Network 全球首要合作伙伴",
+                  "summary": "Cognizant 与 Anthropic 扩大合作，成为 Claude Partner Network 中的 Global Premier Partner，并将 Claude 嵌入其 Flowsource 等平台。已有超过 3 万名员工完成 Claude 培训，其为一家生物制药公司构建的智能合约系统将合同审核时间缩短最高 40%，提取准确率超过 88%。",
+                  "sourceUrl": "https://www.anthropic.com/news/cognizant-anthropic",
+                  "sourceName": "Anthropic：Newsroom（网页）",
+                  "permalink": "https://aihot.virxact.com/items/cms3esi8000bdrozqs3khucp1",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3esi8000bdrozqs3khucp1"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "论文研究",
+              "items": [
+                {
+                  "title": "Apple 提出 GH-ESD：面向实例级视觉任务的假设驱动错误切片发现方法",
+                  "summary": "Apple 机器学习研究团队提出 GH-ESD（Grounded Hypothesis-Driven Error Slice Discovery），一种针对目标检测与分割等实例级视觉任务的错误切片发现方法。现有方法主要适用于图像级分类，难以捕捉由上下文关系和空间视觉模式导致的实例级失败。GH-ESD 通过基于假设的驱动方式，系统性地发现模型在语义连贯子集上的系统性失效。",
+                  "sourceUrl": "https://machinelearning.apple.com/research/gh-esd",
+                  "sourceName": "Apple Machine Learning Research（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3el9cc000orozqcae978wd",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3el9cc000orozqcae978wd"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "技巧与观点",
+              "items": [
+                {
+                  "title": "用AI Skill自动生成可协作HTML PPT",
+                  "summary": "Vista 基于 bento PPT 改造了一个 Skill，输入内容或主题即可自动生成可编辑、在线演示并支持协作的 HTML PPT。安装指令为 `npx skills add joeseesun/qiaomu-bento-ppt`，推荐使用 Kimi K3 或 Opus 4.8+ 等前端审美好的模型。",
+                  "sourceUrl": "https://x.com/vista8/status/2081568902241513786",
+                  "sourceName": "X：Vista (@vista8)",
+                  "permalink": "https://aihot.virxact.com/items/cms2mylvu02nlro3f73afr69h",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms2mylvu02nlro3f73afr69h"
+                  }
+                },
+                {
+                  "title": "GitHub Copilot 发布“Harness”工作流：用单一工具完成原型、规划、实现与代码审查",
+                  "summary": "GitHub Copilot 推出“Harness”工作流，让开发者通过单一 AI 工具完成从原型设计、规划、实现到代码审查的完整软件开发流程，无需追逐多种新 AI 工具。该工作流强调实用性与集成性，旨在减少工具切换带来的效率损耗。",
+                  "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly",
+                  "sourceName": "GitHub Blog",
+                  "permalink": "https://aihot.virxact.com/items/cms3n5wpl001sro82iax01xu3",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3n5wpl001sro82iax01xu3"
+                  }
+                },
+                {
+                  "title": "用Claude和Python构建技能驱动的金融分析智能体",
+                  "summary": "本教程基于Anthropic的financial-services仓库，用纯Python复现其技能驱动架构。通过解析SKILL.md文件构建可搜索技能注册表，并创建可复用SkillAgent，将金融分析剧本注入Anthropic Messages API，支持迭代工具调用循环。",
+                  "sourceUrl": "https://www.marktechpost.com/2026/07/27/designing-skill-driven-financial-analysis-agents-with-claude-python-mcp-connectors-and-automated-deliverables",
+                  "sourceName": "MarkTechPost（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3k7su000n8roiytkztsme7",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3k7su000n8roiytkztsme7"
+                  }
+                },
+                {
+                  "title": "OpenAI 称越来越多员工用 ChatGPT 做其他岗位的工作",
+                  "summary": "OpenAI 分析超 80 万条与工作相关的 ChatGPT 消息后发现，43.5% 的岗位特定查询涉及另一职业，营销和工程任务交叉最多。用户用 AI 处理合同审查、数据分析、网站故障排查等原由专家负责的工作。OpenAI 认为这是岗位职责正在变化的早期信号，该趋势在缺乏专业团队的小公司尤为明显。",
+                  "sourceUrl": "https://the-decoder.com/openai-says-more-workers-are-using-chatgpt-to-do-other-peoples-jobs",
+                  "sourceName": "The Decoder：AI News（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3m8ubg001nrox37oixfg2e",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3m8ubg001nrox37oixfg2e"
+                  }
+                },
+                {
+                  "title": "GitHub Copilot app 入门指南：多 Agent 会话工作区与 Canvas 预览",
+                  "summary": "GitHub Copilot app 将 AI 编码工具升级为多 Agent 会话工作区，支持同时管理多个任务线程而不丢失进度。用户可为每个会话绑定项目上下文，通过 `/create-canvas` 命令在浏览器 Canvas 中预览 UI 并直接点选修改，还能启用 Agent Merge 自动处理 PR 审查反馈和合并冲突。",
+                  "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started",
+                  "sourceName": "GitHub Blog",
+                  "permalink": "https://aihot.virxact.com/items/cms3gqf3h01y1rondsl8z5sxy",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3gqf3h01y1rondsl8z5sxy"
+                  }
+                },
+                {
+                  "title": "浪费20亿Token后，我开源了帮Agent定义目标的Leader.skill",
+                  "summary": "作者开源了Leader.skill，用于将模糊的人类需求转化为Agent可独立执行数小时的目标任务书。该Skill基于“目标七问”方法论，涵盖目的、完成态、反作弊、边界等维度，并推荐用Claude Fable 5或Kimi K3规划目标，再交由GPT-5.6 Sol或GLM-5.2等模型长程执行。项目已开源。",
+                  "sourceUrl": "https://mp.weixin.qq.com/s/AwOk3di8m6eVeIUjzNftgg",
+                  "sourceName": "公众号：数字生命卡兹克",
+                  "permalink": "https://aihot.virxact.com/items/cms2p7s7h03dlro3fzjovkpwc",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms2p7s7h03dlro3fzjovkpwc"
+                  }
+                },
+                {
+                  "title": "Anthropic 澄清立场：从未主张全面禁止开源权重模型，支持芯片出口管制与安全测试",
+                  "summary": "Anthropic CEO Dario Amodei 明确表示公司从未主张禁止开源权重模型，并认为不具备危险能力的开源权重模型是公共产品。他提出三项实际措施：对华芯片出口管制、打击工业级知识蒸馏、对所有足够强大的模型进行强制性安全测试。Amodei 指出，保护主义禁令无法解决其最担忧的国家安全威胁，包括威权政府利用更强大 AI 实现军事优势或深度监控。",
+                  "sourceUrl": "https://www.anthropic.com/news/position-open-weights-models",
+                  "sourceName": "Anthropic：Newsroom（网页）",
+                  "permalink": "https://aihot.virxact.com/items/cms3sq44w01v7ro82l278pl7v",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3sq44w01v7ro82l278pl7v"
+                  }
+                },
+                {
+                  "title": "OpenRouter 新增图像生成模型专用 API 端点",
+                  "summary": "OpenRouter 通过专用 `/api/v1/images` 端点提供图像生成模型服务，图像理解仍通过 `/chat/completions` 端点完成，两者共用同一 API Key 和计费体系。该平台同时公布了两种任务的完整接口合约，并修复了此前出现的“no endpoints found”错误。",
+                  "sourceUrl": "https://openrouter.ai/blog/tutorials/image-generation-models",
+                  "sourceName": "OpenRouter：Announcements（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cms3fuyms00mtrondudz5pjw8",
+                  "attribution": {
+                    "source": "AI HOT",
+                    "canonical": "https://aihot.virxact.com/items/cms3fuyms00mtrondudz5pjw8"
+                  }
+                }
+              ]
+            }
+          ],
+          "flashes": []
+        },
+        "isToday": true,
+        "usedDate": "2026-07-28",
+        "fallback": false,
+        "fetchedAt": "2026-07-28T01:28:53.561Z"
       }
     }
   ]
