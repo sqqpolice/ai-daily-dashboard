@@ -5,7 +5,7 @@
 # 3) git commit + push 到 origin/main（GitHub Pages 自动发布）
 set -u
 cd "$(dirname "$0")/.." || exit 1
-NODE="/c/Users/25589/.workbuddy/binaries/node/versions/22.22.2/node.exe"
+NODE="/c/Users/25589/.workbuddy/binaries/node/versions/22.22.2-2/node.exe"
 
 echo "[1/3] build today's dashboard"
 "$NODE" .build/build.js || { echo "[deploy] build.js failed"; exit 1; }
