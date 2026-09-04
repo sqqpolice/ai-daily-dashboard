@@ -1,234 +1,6 @@
 {
-  "generatedAt": "2026-09-03T01:09:45.814Z",
+  "generatedAt": "2026-09-04T10:25:48.570Z",
   "days": [
-    {
-      "date": "2026-08-25",
-      "weekday": "周二",
-      "available": true,
-      "total": 14,
-      "sections": [
-        {
-          "label": "模型发布/更新",
-          "count": 1
-        },
-        {
-          "label": "产品发布/更新",
-          "count": 5
-        },
-        {
-          "label": "行业动态",
-          "count": 2
-        },
-        {
-          "label": "论文研究",
-          "count": 1
-        },
-        {
-          "label": "技巧与观点",
-          "count": 5
-        }
-      ],
-      "file": "archive/ai-daily-2026-08-25.html",
-      "env": {
-        "source": {
-          "date": "2026-08-25",
-          "attribution": {
-            "source": "AIHOT",
-            "canonical": "https://aihot.virxact.com/daily/2026-08-25"
-          },
-          "generatedAt": "2026-08-25T00:00:00.987Z",
-          "windowStart": "2026-08-24T00:00:00.000Z",
-          "windowEnd": "2026-08-25T00:00:00.000Z",
-          "lead": null,
-          "sections": [
-            {
-              "label": "模型发布/更新",
-              "items": [
-                {
-                  "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
-                  "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。",
-                  "sourceUrl": "https://openai.com/index/gpt-5-6-in-kiro",
-                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7nzq6i2c27ro73tqxagz44"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "产品发布/更新",
-              "items": [
-                {
-                  "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
-                  "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
-                  "sourceUrl": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents",
-                  "sourceName": "NVIDIA Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232wro738qg82x67"
-                  }
-                },
-                {
-                  "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
-                  "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
-                  "sourceUrl": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet",
-                  "sourceName": "Meta Engineering Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7nq1d02bs1ro7373u88po4"
-                  }
-                },
-                {
-                  "title": "NVIDIA 如何用 NVLink Fusion 让定制 XPU 融入世界级 AI 工厂",
-                  "summary": "NVIDIA 推出 NVLink Fusion，将定制 XPU 接入其 NVLink 扩展域，使 XPU 间端到端延迟比基于现成以太网的方案低 3 倍、数据包速率高 10 倍。",
-                  "sourceUrl": "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory",
-                  "sourceName": "NVIDIA Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7e0g7y232uro73in6qfyu8",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232uro73in6qfyu8"
-                  }
-                },
-                {
-                  "title": "MTIA 300：Meta 首款内置 NIC 与通信卸载引擎的训练芯片",
-                  "summary": "Meta 发布 MTIA 300，这是其自研加速器家族中首款针对推荐与排序模型训练优化的芯片。芯片封装内集成 12 个 800 Gbps RDMA NIC，提供 1.2 TB/s 总 I/O 带宽，并通过 16 个专用消息引擎卸载通信，使大规模 GEMM 与集合通信并发时计算吞吐损耗低于 0.5%。",
-                  "sourceUrl": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics",
-                  "sourceName": "Meta Engineering Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7jfq8b27ifro73rq5ao3ro",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7jfq8b27ifro73rq5ao3ro"
-                  }
-                },
-                {
-                  "title": "NVIDIA 扩展 Vera Rubin 推理能力，Groq 3 LPX 全面投产支持智能体系统",
-                  "summary": "NVIDIA 宣布 Vera Rubin NVL72 扩展快速 token 生成能力，以支持智能体系统。其机架级系统 NVIDIA Groq 3 LPX 已全面投产，旨在通过 AI 工厂各层协同工作来定义下一代 AI 推理，而非依赖单一芯片、网络或系统的突破。",
-                  "sourceUrl": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion",
-                  "sourceName": "NVIDIA Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7e0g7y232vro73h5qdphen",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7e0g7y232vro73h5qdphen"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "行业动态",
-              "items": [
-                {
-                  "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
-                  "summary": "Mistral 与 HUMAIN 宣布达成战略合作，覆盖 AI 基础设施、先进模型开发及 AI 解决方案部署，聚焦沙特阿拉伯及更广泛地区。双方将合作开发本地化 AI 模型，初期重点包括网络安全和语音，并计划开发在阿拉伯语上表现强劲的前沿模型。该合作金额达数亿欧元，Mistral 将探索使用 HUMAIN 的数据中心基础设施，并计划在沙特针对受监管行业制定联合市场策略。",
-                  "sourceUrl": "https://mistral.ai/news/mistral-x-humain",
-                  "sourceName": "Mistral AI：News（网页）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7o0j0d2c2fro73v4d7k8nz",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7o0j0d2c2fro73v4d7k8nz"
-                  }
-                },
-                {
-                  "title": "丰田北美如何用 Deep Agents 和 LangSmith 规模化企业 AI",
-                  "summary": "丰田北美借助 Deep Agents 和 LangSmith 运行 50 多个生产环境 AI 智能体，将交付周期从 6 个月缩短至 4 天。文章展示了其如何通过 LangSmith 追踪 AI 投资回报率（ROI），并以此支撑企业级 AI 的规模化落地。",
-                  "sourceUrl": "https://www.langchain.com/blog/how-toyota-north-america-put-enterprise-ai-on-the-balance-sheet-with-deep-agents-and-langsmith",
-                  "sourceName": "LangChain：Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7kxoay29laro73gn4kt0gy",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7kxoay29laro73gn4kt0gy"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "论文研究",
-              "items": [
-                {
-                  "title": "Beyond Visual CoT：Internalized Visual Thinking 实现主动视频推理",
-                  "summary": "多模态大语言模型常用视觉思维链（Visual CoT）进行空间、时间与具身环境推理，但生成中间推理图像带来大量推理开销。新提出的后训练框架 Internalized Visual Thinking（IVT）在训练阶段内化视觉思考，推理时直接进行文本预测与优化，从而在不增加推理成本的前提下实现主动视频推理。",
-                  "sourceUrl": "https://machinelearning.apple.com/research/internalized-visual-thinking",
-                  "sourceName": "Apple Machine Learning Research（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7f8jmb249hro73by2hu7ti",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7f8jmb249hro73by2hu7ti"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "技巧与观点",
-              "items": [
-                {
-                  "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
-                  "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
-                  "sourceUrl": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them",
-                  "sourceName": "TechCrunch：AI（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7e3m7h234gro73wwwhymb0"
-                  }
-                },
-                {
-                  "title": "ADK 如何评估实时语音智能体",
-                  "summary": "Google 为 ADK 带来原生实时评估能力，可用模拟用户以音频驱动实时语音智能体、对语音回复打分，并在与文本智能体相同的评估循环中完成。示例采用三个基于 gemini-live-2.5-flash-native-audio 的智能体组成工作流，支持对话场景与固定对话两种测试用例，内置 NOVICE 等用户人设，并以 max_allowed_invocations 限制总轮数。",
-                  "sourceUrl": "https://developers.googleblog.com/how-to-evaluate-live-voice-agents-in-adk",
-                  "sourceName": "Google Developers Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7kh1fc294fro734i8ab8hh",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7kh1fc294fro734i8ab8hh"
-                  }
-                },
-                {
-                  "title": "Databricks 如何从本地 IDE 运行、调试和扩展工作负载",
-                  "summary": "Databricks 工作区专为数据分析和数据工程而构建，现支持从本地 IDE 直接运行、调试和扩展工作负载。该功能旨在弥合本地开发环境与云端 Databricks 平台之间的差距，让开发者无需切换上下文即可完成编码、测试和部署。",
-                  "sourceUrl": "https://www.databricks.com/blog/run-debug-and-scale-databricks-workloads-your-local-ide",
-                  "sourceName": "Databricks：Blog（RSS）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7isiid2710ro73lai3274f",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7isiid2710ro73lai3274f"
-                  }
-                },
-                {
-                  "title": "你的alt文本能通过自动化检查，不代表它真的合格",
-                  "summary": "WebAIM Million报告显示，主流网页中16.2%的图片缺少alt文本，另有10.8%的alt文本模糊或重复。GitHub为Accessibility Scanner构建了alt文本插件，采用五条确定性规则检测缺失、文件名、占位符、泛化词及相邻重复，并引入基于布局的重复检测和可选视觉模型审查，以平衡误报率与实用性。",
-                  "sourceUrl": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good",
-                  "sourceName": "GitHub Blog",
-                  "permalink": "https://aihot.virxact.com/items/cmt7q32662diiro73mypfdhil",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7q32662diiro73mypfdhil"
-                  }
-                },
-                {
-                  "title": "Anthropic 市场人员如何用 Claude Code 每周为每位销售代表发送个性化更新",
-                  "summary": "Anthropic 市场团队成员 Adam Ward 分享如何用 Claude Code 将每周销售报告转化为每位客户经理的个性化周一简报。他通过 MCP 连接 BigQuery 和 CRM 数据，并依据销售与经理反馈迭代提示词，加入“绝不编造 URL”等九条内容规则。该简报现已推广至所有销售团队，每周一自动发送三条优先行动项及账户相关活动。",
-                  "sourceUrl": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep",
-                  "sourceName": "Claude：Blog（网页）",
-                  "permalink": "https://aihot.virxact.com/items/cmt7e978k238lro73cr8tyjhv",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.virxact.com/items/cmt7e978k238lro73cr8tyjhv"
-                  }
-                }
-              ]
-            }
-          ],
-          "flashes": []
-        },
-        "isToday": false,
-        "usedDate": "2026-08-25",
-        "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.082Z"
-      }
-    },
     {
       "date": "2026-08-26",
       "weekday": "周三",
@@ -509,7 +281,7 @@
         "isToday": false,
         "usedDate": "2026-08-26",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.190Z"
+        "fetchedAt": "2026-09-04T10:25:46.493Z"
       }
     },
     {
@@ -891,7 +663,7 @@
         "isToday": false,
         "usedDate": "2026-08-27",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.292Z"
+        "fetchedAt": "2026-09-04T10:25:46.794Z"
       }
     },
     {
@@ -1152,7 +924,7 @@
         "isToday": false,
         "usedDate": "2026-08-28",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.353Z"
+        "fetchedAt": "2026-09-04T10:25:47.082Z"
       }
     },
     {
@@ -1402,7 +1174,7 @@
         "isToday": false,
         "usedDate": "2026-08-29",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.418Z"
+        "fetchedAt": "2026-09-04T10:25:47.404Z"
       }
     },
     {
@@ -1533,7 +1305,7 @@
         "isToday": false,
         "usedDate": "2026-08-30",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.528Z"
+        "fetchedAt": "2026-09-04T10:25:47.670Z"
       }
     },
     {
@@ -1602,7 +1374,7 @@
         "isToday": false,
         "usedDate": "2026-08-31",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.601Z"
+        "fetchedAt": "2026-09-04T10:25:47.969Z"
       }
     },
     {
@@ -1755,7 +1527,7 @@
         "isToday": false,
         "usedDate": "2026-09-01",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.687Z"
+        "fetchedAt": "2026-09-04T10:25:48.179Z"
       }
     },
     {
@@ -1919,7 +1691,7 @@
         "isToday": false,
         "usedDate": "2026-09-02",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.788Z"
+        "fetchedAt": "2026-09-04T10:25:48.375Z"
       }
     },
     {
@@ -2146,10 +1918,306 @@
           ],
           "flashes": []
         },
-        "isToday": true,
+        "isToday": false,
         "usedDate": "2026-09-03",
         "fallback": false,
-        "fetchedAt": "2026-09-03T01:09:45.803Z"
+        "fetchedAt": "2026-09-04T10:25:48.535Z"
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "weekday": "周五",
+      "available": true,
+      "total": 21,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 8
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 4
+        },
+        {
+          "label": "行业动态",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 8
+        }
+      ],
+      "file": "archive/ai-daily-2026-09-04.html",
+      "env": {
+        "source": {
+          "date": "2026-09-04",
+          "attribution": {
+            "source": "AIHOT",
+            "canonical": "https://aihot.virxact.com/daily/2026-09-04"
+          },
+          "generatedAt": "2026-09-04T00:01:53.318Z",
+          "windowStart": "2026-09-03T00:00:00.000Z",
+          "windowEnd": "2026-09-04T00:00:00.000Z",
+          "lead": null,
+          "sections": [
+            {
+              "label": "模型发布/更新",
+              "items": [
+                {
+                  "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
+                  "summary": "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，2026 年 4 月 30 日知识截止，OSWorld V2-Offline 得分 72.6%（GPT-5.6 Sol 为 65.7%），平均任务时间从约 75 分钟降至 40 分钟。",
+                  "sourceUrl": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+                  "sourceName": "MarkTechPost（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtm1j0qe0uchrow5ozapge42",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm1j0qe0uchrow5ozapge42"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
+                  "summary": "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、Plus、Enterprise、Business 付费账户及 API。",
+                  "sourceUrl": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
+                  "sourceName": "TechCrunch：AI（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlu0vyd0nelrow5qppvereu"
+                  }
+                },
+                {
+                  "title": "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
+                  "summary": "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 Enterprise 套餐。发布需几天完成，背后多个全新系统将首次大规模运行，团队正带来大量算力，详情见 openai.com/index/gpt-6-astra/。",
+                  "sourceUrl": "https://x.com/thsottiaux/status/2095597168816226335",
+                  "sourceName": "X：Tibo (@thsottiaux)",
+                  "permalink": "https://aihot.virxact.com/items/cmtlyijvl0rlsrow5dwqv22k7",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlyijvl0rlsrow5dwqv22k7"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+                  "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+                  "sourceUrl": "https://x.com/sherwinwu/status/2095608486940086448",
+                  "sourceName": "X：Sherwin Wu（@sherwinwu）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlzumiu0sojrow5820i30sg",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlzumiu0sojrow5820i30sg"
+                  }
+                },
+                {
+                  "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+                  "summary": "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 开源，其中 0.9B、3.7B 和 7B 宣称在其规模上达到 SOTA，36B-A4B 采用新提出的稀疏注意力架构 MoVA。",
+                  "sourceUrl": "https://ifm.ai/blog/k2",
+                  "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlu0yka0neurow5as9e6jtu",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlu0yka0neurow5as9e6jtu"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
+                  "summary": "OpenAI 于 9 月 3 日发布新一代大语言模型 GPT-6 Astra，是其首个达到准备框架中关键级网络安全能力门槛的模型，可在无逐步指导下发现防护严密系统的未知漏洞。",
+                  "sourceUrl": "https://www.ithome.com/0/998/208.htm",
+                  "sourceName": "IT之家（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtm3lnrg022wrooelnc62oo9",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm3lnrg022wrooelnc62oo9"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布 GPT-6 Astra，官方基准显示 ARC-AGI-3 得分 99.9%",
+                  "summary": "",
+                  "sourceUrl": "https://x.com/kimmonismus/status/2095585966102614182",
+                  "sourceName": "X：Kim (@kimmonismus)",
+                  "permalink": "https://aihot.virxact.com/items/cmtlwgygo0pnorow5q12m2p9j",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlwgygo0pnorow5q12m2p9j"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
+                  "summary": "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上全面超过此前保持 SOTA 两天的 Claude Fable 5.1，且价格更低。",
+                  "sourceUrl": "https://x.com/kimmonismus/status/2095589174686400914",
+                  "sourceName": "X：Kim (@kimmonismus)",
+                  "permalink": "https://aihot.virxact.com/items/cmtlwgygo0pnnrow5tbc0sok8",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlwgygo0pnnrow5tbc0sok8"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "产品发布/更新",
+              "items": [
+                {
+                  "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
+                  "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
+                  "sourceUrl": "https://huggingface.co/blog/funes",
+                  "sourceName": "Hugging Face：Blog（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlg0ht406hlrow5clznd0ld"
+                  }
+                },
+                {
+                  "title": "xAI 设计 Grok Bot：为持久化智能体重构交互界面",
+                  "summary": "xAI 发布设计文章，介绍 Grok Bot 如何为超越单次会话的持久化智能体设计界面。产品以 Bot 为主要对象而非会话，Bot 拥有身份、记忆、自己的计算机和工具；头像动效呈现空闲、工作、等待、阻塞、思考、完成等状态；工作区提供状态、预览、接管三级访问。",
+                  "sourceUrl": "https://x.ai/news/designing-grok-bot",
+                  "sourceName": "xAI：News（网页）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlu23pp0ng4row5uxwtpazb",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlu23pp0ng4row5uxwtpazb"
+                  }
+                },
+                {
+                  "title": "OpenAI 推出 Daybreak for Frontline Defenders，投入10亿美元支持一线网络防御",
+                  "summary": "OpenAI 发布 Daybreak for Frontline Defenders 全球计划，承诺提供10亿美元的 Daybreak 补贴访问、培训、技术支持与合作，计划在未来六个月内消耗，优先支持水处理、电网、州和地方政府、社区银行、非营利组织和开源维护者等资源有限的一线防御者。",
+                  "sourceUrl": "https://openai.com/index/daybreak-for-frontline-defenders",
+                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+                  "permalink": "https://aihot.virxact.com/items/cmtm02uu60t29row5y74k0eai",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm02uu60t29row5y74k0eai"
+                  }
+                },
+                {
+                  "title": "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
+                  "summary": "xAI 宣布 Grok Bot 面向企业开放，Grok 和 Cursor Enterprise 客户未来两周可免费使用并邀请全组织成员，包括没有现有席位的员工。",
+                  "sourceUrl": "https://x.ai/news/grok-bot-for-enterprise",
+                  "sourceName": "xAI：News（网页）",
+                  "permalink": "https://aihot.virxact.com/items/cmtm1k75y0ue9row58wfax9nf",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm1k75y0ue9row58wfax9nf"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "行业动态",
+              "items": [
+                {
+                  "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
+                  "summary": "NVIDIA 宣布已同意以 12,930,300,000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。",
+                  "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
+                  "sourceName": "NVIDIA Blog（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtli5yd109u4row52i1xg9j4"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "技巧与观点",
+              "items": [
+                {
+                  "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
+                  "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol (max) 高约 70%。",
+                  "sourceUrl": "https://x.com/ArtificialAnlys/status/2095595489031000350",
+                  "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
+                  "permalink": "https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtly53c50r9srow5ux7p8arw"
+                  }
+                },
+                {
+                  "title": "François Chollet 评 GPT-6 Astra 在 ARC-AGI-3 上的表现",
+                  "summary": "François Chollet 发文称 GPT-6 Astra 在交互式推理任务上带来阶跃式能力提升，使用标准 harness 在 ARC-AGI-3 上得 66%，配合持续对话 harness 和自定义 compaction 接近 100%，每局成本约 $360。",
+                  "sourceUrl": "https://x.com/fchollet/status/2095598451115614371",
+                  "sourceName": "X：Francois Chollet (@fchollet)",
+                  "permalink": "https://aihot.virxact.com/items/cmtlyeuas0rigrow5d2jq4xb7",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlyeuas0rigrow5d2jq4xb7"
+                  }
+                },
+                {
+                  "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+                  "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+                  "sourceUrl": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+                  "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
+                  "permalink": "https://aihot.virxact.com/items/cmtm0r9z00tmkrow5gtxa5j36",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm0r9z00tmkrow5gtxa5j36"
+                  }
+                },
+                {
+                  "title": "Gary Marcus 评 GPT-6 Astra：进步明显但鲁棒性与可监控性存疑",
+                  "summary": "Gary Marcus 发文点评 GPT-6 Astra，称多项报告显示其为真正的进步，OpenAI 产品显式创建并操纵符号世界模型，令其近十年的主张获得印证。",
+                  "sourceUrl": "https://garymarcus.substack.com/p/hot-take-on-gpt-6-astra",
+                  "sourceName": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtm5q99n018rrow0z6je2l9y",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtm5q99n018rrow0z6je2l9y"
+                  }
+                },
+                {
+                  "title": "Tom Tunguz 解析 Meta Muse Spark 双轨定价背后的数据换算力逻辑",
+                  "summary": "Tom Tunguz 分析 Meta 发布 Muse Spark 模型及双轨 API 定价：Standard Tier（muse-spark-1.3）输入 $1.25/m。",
+                  "sourceUrl": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai",
+                  "sourceName": "Tomer Tunguz 博客（VC 分析）",
+                  "permalink": "https://aihot.virxact.com/items/cmtltscl80m18row5tw9bb0qw",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtltscl80m18row5tw9bb0qw"
+                  }
+                },
+                {
+                  "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
+                  "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。",
+                  "sourceUrl": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
+                  "sourceName": "Google AI：DEV 作者专属（RSS）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlrfcid0jqzrow5cg1jvuny"
+                  }
+                },
+                {
+                  "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
+                  "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 (max) 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 (xhigh) 的 68 分。",
+                  "sourceUrl": "https://x.com/alexandr_wang/status/2095318449602138577",
+                  "sourceName": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
+                  "permalink": "https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtktzp3605o8roals1ci2tza"
+                  }
+                },
+                {
+                  "title": "ARC-AGI-3 发布仅半年即被 Astra 饱和，进展快于 François Chollet 预期一倍",
+                  "summary": "Sherwin Wu 表示自己曾觉得 ARC-AGI-3 很难，如今该基准已被 Astra 饱和。引用 François Chollet 的话称，ARC 3 发布时他预计前沿模型约一年才能饱和，实际只用了 6 个月，约为预期的 2 倍速度，新一代模型的能力将挑战人们基于旧模型形成的 AI 观点。",
+                  "sourceUrl": "https://x.com/sherwinwu/status/2095608725730119733",
+                  "sourceName": "X：Sherwin Wu（@sherwinwu）",
+                  "permalink": "https://aihot.virxact.com/items/cmtlzumiu0soirow5cfujh2xf",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.virxact.com/items/cmtlzumiu0soirow5cfujh2xf"
+                  }
+                }
+              ]
+            }
+          ],
+          "flashes": []
+        },
+        "isToday": true,
+        "usedDate": "2026-09-04",
+        "fallback": false,
+        "fetchedAt": "2026-09-04T10:25:48.559Z"
       }
     }
   ]
