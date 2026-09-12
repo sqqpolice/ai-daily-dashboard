@@ -1,170 +1,6 @@
 {
-  "generatedAt": "2026-09-11T10:37:29.607Z",
+  "generatedAt": "2026-09-12T01:28:54.813Z",
   "days": [
-    {
-      "date": "2026-09-02",
-      "weekday": "周三",
-      "available": true,
-      "total": 9,
-      "sections": [
-        {
-          "label": "模型发布/更新",
-          "count": 2
-        },
-        {
-          "label": "产品发布/更新",
-          "count": 3
-        },
-        {
-          "label": "论文研究",
-          "count": 2
-        },
-        {
-          "label": "技巧与观点",
-          "count": 2
-        }
-      ],
-      "file": "archive/ai-daily-2026-09-02.html",
-      "env": {
-        "source": {
-          "date": "2026-09-02",
-          "attribution": {
-            "source": "AIHOT",
-            "canonical": "https://aihot.news/daily/2026-09-02"
-          },
-          "generatedAt": "2026-09-02T00:00:31.527Z",
-          "windowStart": "2026-09-01T00:00:00.000Z",
-          "windowEnd": "2026-09-02T00:00:00.000Z",
-          "lead": null,
-          "sections": [
-            {
-              "label": "模型发布/更新",
-              "items": [
-                {
-                  "title": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布",
-                  "summary": "OpenAI 宣布 Astra 在其 Preparedness Framework 下达到 Critical 网络安全能力阈值，是首个被评定为该级别的模型，可在少人干预下发现未知漏洞并构建利用链。",
-                  "sourceUrl": "https://openai.com/index/path-to-astra",
-                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-                  "permalink": "https://aihot.news/items/cmtj42kz5057qroh9yw6fjh9h",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtj42kz5057qroh9yw6fjh9h"
-                  }
-                },
-                {
-                  "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-                  "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
-                  "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#september-1-2026",
-                  "sourceName": "Claude Platform：开发者版本说明（RSS）",
-                  "permalink": "https://aihot.news/items/cmtj04igz04xproel00pt2oju",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtj04igz04xproel00pt2oju"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "产品发布/更新",
-              "items": [
-                {
-                  "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
-                  "summary": "Google DeepMind 为 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 推出 agentic video understanding，模型动态扫描视频片段，相比固定帧率处理 token 消耗最多降低 88%，成本最多降低 66%，准确率最多提升 7%。",
-                  "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-                  "sourceName": "Google DeepMind：Blog（RSS）",
-                  "permalink": "https://aihot.news/items/cmtiy0v6k01dproel63pg10os",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtiy0v6k01dproel63pg10os"
-                  }
-                },
-                {
-                  "title": "Hugging Face 发布 @huggingface/kernels，提供 207 个 WebGPU 内核用于浏览器本地 AI 推理",
-                  "summary": "Hugging Face WebAI 团队发布 @huggingface/kernels 库及 207 个以独立仓库形式托管在 Hub 上的 WebGPU 内核（Apache-2.0），每个内核带 manifest、正确性测试、基准用例和 WGSL 着色器模板。",
-                  "sourceUrl": "https://huggingface.co/blog/webgpu-kernels",
-                  "sourceName": "Hugging Face：Blog（RSS）",
-                  "permalink": "https://aihot.news/items/cmtitozyq04j2ro9ydv3oxgsd",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtitozyq04j2ro9ydv3oxgsd"
-                  }
-                },
-                {
-                  "title": "Google Workspace 推出图像创作编辑工具 Google Pics",
-                  "summary": "Google 发布 Workspace 图像创作与编辑工具 Google Pics，将在未来数周内面向所有 Google AI Pro 和 Ultra 订阅者及多数 Workspace 商业客户推出。",
-                  "sourceUrl": "https://blog.google/products-and-platforms/products/workspace/google-pics",
-                  "sourceName": "Google Blog：AI（RSS）",
-                  "permalink": "https://aihot.news/items/cmtivvilg06f0ro9yk5dt7mrc",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtivvilg06f0ro9yk5dt7mrc"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "论文研究",
-              "items": [
-                {
-                  "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-                  "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
-                  "sourceUrl": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-                  "sourceName": "X：Rohan Paul (@rohanpaul_ai)",
-                  "permalink": "https://aihot.news/items/cmtj2y06p04bwroh9d8oszszo",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtj2y06p04bwroh9d8oszszo"
-                  }
-                },
-                {
-                  "title": "Anthropic 研究：训练一个错位的奖励寻求者模型",
-                  "summary": "Anthropic 发布新研究 Training a Misaligned Reward Seeker，探究奖励作弊（reward-hacking）是否会让模型学会不择手段追求奖励。",
-                  "sourceUrl": "https://x.com/AnthropicAI/status/2094577944056430865",
-                  "sourceName": "X：Anthropic (@AnthropicAI)",
-                  "permalink": "https://aihot.news/items/cmthxigqm04c1rofqqmk7pkqi",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmthxigqm04c1rofqqmk7pkqi"
-                  }
-                }
-              ]
-            },
-            {
-              "label": "技巧与观点",
-              "items": [
-                {
-                  "title": "Claude Fable 5.1 登顶 Artificial Analysis 智能指数，但每任务成本比 Fable 5 高 20%",
-                  "summary": "Artificial Analysis 评测 Claude Fable 5.1，其在 max effort 下得 66 分登顶 Artificial Analysis Intelligence Index。",
-                  "sourceUrl": "https://x.com/ArtificialAnlys/status/2094881171066978525",
-                  "sourceName": "X：Artificial Analysis (@ArtificialAnlys)",
-                  "permalink": "https://aihot.news/items/cmtj484a00592roh9jjdf5xkd",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtj484a00592roh9jjdf5xkd"
-                  }
-                },
-                {
-                  "title": "路透社调查：美国 AI 数据中心现大量幽灵用电需求，得州等多州出手整治",
-                  "summary": "据路透社报道，美国中西部、中大西洋和南部地区超大型用电户（主要为数据中心）提出的用电申请已超过 700 吉瓦，超过全美数据中心实际用电量估计的十倍，其中相当一部分可能是重复提交或缺乏资金能力的幻象需求。",
-                  "sourceUrl": "https://www.ithome.com/0/997/147.htm",
-                  "sourceName": "IT之家（RSS）",
-                  "permalink": "https://aihot.news/items/cmtipeu1u01a2ro9yi22t9cev",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtipeu1u01a2ro9yi22t9cev"
-                  }
-                }
-              ]
-            }
-          ],
-          "flashes": []
-        },
-        "isToday": false,
-        "usedDate": "2026-09-02",
-        "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:28.235Z"
-      }
-    },
     {
       "date": "2026-09-03",
       "weekday": "周四",
@@ -392,7 +228,7 @@
         "isToday": false,
         "usedDate": "2026-09-03",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:28.320Z"
+        "fetchedAt": "2026-09-12T01:28:54.087Z"
       }
     },
     {
@@ -688,7 +524,7 @@
         "isToday": false,
         "usedDate": "2026-09-04",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:28.500Z"
+        "fetchedAt": "2026-09-12T01:28:54.155Z"
       }
     },
     {
@@ -894,7 +730,7 @@
         "isToday": false,
         "usedDate": "2026-09-05",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:28.669Z"
+        "fetchedAt": "2026-09-12T01:28:54.274Z"
       }
     },
     {
@@ -1091,7 +927,7 @@
         "isToday": false,
         "usedDate": "2026-09-06",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:28.792Z"
+        "fetchedAt": "2026-09-12T01:28:54.375Z"
       }
     },
     {
@@ -1162,7 +998,7 @@
         "isToday": false,
         "usedDate": "2026-09-07",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:29.056Z"
+        "fetchedAt": "2026-09-12T01:28:54.445Z"
       }
     },
     {
@@ -1231,7 +1067,7 @@
         "isToday": false,
         "usedDate": "2026-09-08",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:29.185Z"
+        "fetchedAt": "2026-09-12T01:28:54.504Z"
       }
     },
     {
@@ -1448,7 +1284,7 @@
         "isToday": false,
         "usedDate": "2026-09-09",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:29.270Z"
+        "fetchedAt": "2026-09-12T01:28:54.564Z"
       }
     },
     {
@@ -1709,7 +1545,7 @@
         "isToday": false,
         "usedDate": "2026-09-10",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:29.540Z"
+        "fetchedAt": "2026-09-12T01:28:54.643Z"
       }
     },
     {
@@ -1956,10 +1792,123 @@
           ],
           "flashes": []
         },
-        "isToday": true,
+        "isToday": false,
         "usedDate": "2026-09-11",
         "fallback": false,
-        "fetchedAt": "2026-09-11T10:37:29.599Z"
+        "fetchedAt": "2026-09-12T01:28:54.779Z"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "weekday": "周六",
+      "available": true,
+      "total": 6,
+      "sections": [
+        {
+          "label": "论文研究",
+          "count": 1
+        },
+        {
+          "label": "技巧与观点",
+          "count": 5
+        }
+      ],
+      "file": "archive/ai-daily-2026-09-12.html",
+      "env": {
+        "source": {
+          "date": "2026-09-12",
+          "attribution": {
+            "source": "AIHOT",
+            "canonical": "https://aihot.news/daily/2026-09-12"
+          },
+          "generatedAt": "2026-09-12T00:01:36.597Z",
+          "windowStart": "2026-09-11T00:00:00.000Z",
+          "windowEnd": "2026-09-12T00:00:00.000Z",
+          "lead": null,
+          "sections": [
+            {
+              "label": "论文研究",
+              "items": [
+                {
+                  "title": "Anthropic 威胁报告披露 Claude 被用于间谍软件、导弹与无人机研发，中国实验室大规模蒸馏提取数据",
+                  "summary": "Anthropic 发布威胁情报报告，记录 2025 年 12 月至 2026 年 8 月间 Claude 被滥用的七类行为。俄语间谍组织用 AI 代理自动改写恶意软件绕过杀软，也门一组织用 Claude Code 开发射程超 2000 公里的导弹软件，另有团队构建无人在环的自主 FPV 无人机蜂群。",
+                  "sourceUrl": "https://the-decoder.com/how-hackers-used-claude-for-missiles-drone-swarms-and-surveillance-while-chinese-labs-mined-it-for-training-data",
+                  "sourceName": "The Decoder：AI News（RSS）",
+                  "permalink": "https://aihot.news/items/cmtx0v3dg030mroedwvkdfyvw",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtx0v3dg030mroedwvkdfyvw"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "技巧与观点",
+              "items": [
+                {
+                  "title": "实测 DeepSeek V4.1 Flash：价格大降、原生带视觉，作者用游戏与城市生成任务验证表现",
+                  "summary": "作者实测 DeepSeek V4.1 Flash，缓存命中输入降价 7 倍多、输出砍三分之二，9 月 14 日中午 12 点起所有发往 v4-pro 的请求将被强制路由到 4.1 Flash 并按其低价计费。",
+                  "sourceUrl": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247511119&idx=1&sn=0f53b5017e41b16afc9b201966ce2bda",
+                  "sourceName": "公众号：卡尔的AI沃茨",
+                  "permalink": "https://aihot.news/items/cmtwsc5gt09uarow7n2r2jrz3",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtwsc5gt09uarow7n2r2jrz3"
+                  }
+                },
+                {
+                  "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远",
+                  "summary": "Dwarkesh Patel 与 Zyphra CTO Beren Millidge、Thinking Machines 首席科学家 John Schulman、Baseten 模型训练负责人 Charlie O'Neill 三位研究者对谈递归自我改进（RSI）的前景。",
+                  "sourceUrl": "https://www.dwarkesh.com/p/john-beren-charlie",
+                  "sourceName": "Dwarkesh Patel：Podcast & Blog（RSS）",
+                  "permalink": "https://aihot.news/items/cmtx7e9sn09mmroedph6hkyx4",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtx7e9sn09mmroedph6hkyx4"
+                  }
+                },
+                {
+                  "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点",
+                  "summary": "Elon Musk 转发 Grok Bot 对 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 演讲的摘要。",
+                  "sourceUrl": "https://x.com/elonmusk/status/2098217236771295567",
+                  "sourceName": "X：Elon Musk (@elonmusk, xAI)",
+                  "permalink": "https://aihot.news/items/cmtw9fws408trrolkp9glkz9j",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtw9fws408trrolkp9glkz9j"
+                  }
+                },
+                {
+                  "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+                  "summary": "GitHub 日韩地区营销负责人 Tomoko Tanaka 分享如何不写代码，把活动运营交给 GitHub Copilot 自动化。",
+                  "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+                  "sourceName": "GitHub Blog",
+                  "permalink": "https://aihot.news/items/cmtxbm8dp037xrouueja171wr",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtxbm8dp037xrouueja171wr"
+                  }
+                },
+                {
+                  "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
+                  "summary": "OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒处理超 7000 万请求、服务每周超 10 亿用户、管理超 500PB 数据，覆盖近 40 个地区。",
+                  "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+                  "permalink": "https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmtx7f9mi09psroed4b1w3nsv"
+                  }
+                }
+              ]
+            }
+          ],
+          "flashes": []
+        },
+        "isToday": true,
+        "usedDate": "2026-09-12",
+        "fallback": false,
+        "fetchedAt": "2026-09-12T01:28:54.805Z"
       }
     }
   ]
