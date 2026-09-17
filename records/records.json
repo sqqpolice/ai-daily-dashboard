@@ -1,77 +1,6 @@
 {
-  "generatedAt": "2026-09-16T10:38:44.725Z",
+  "generatedAt": "2026-09-17T10:42:35.725Z",
   "days": [
-    {
-      "date": "2026-09-07",
-      "weekday": "周一",
-      "available": true,
-      "total": 3,
-      "sections": [
-        {
-          "label": "技巧与观点",
-          "count": 3
-        }
-      ],
-      "file": "archive/ai-daily-2026-09-07.html",
-      "env": {
-        "source": {
-          "date": "2026-09-07",
-          "attribution": {
-            "source": "AIHOT",
-            "canonical": "https://aihot.news/daily/2026-09-07"
-          },
-          "generatedAt": "2026-09-07T00:00:08.061Z",
-          "windowStart": "2026-09-06T00:00:00.000Z",
-          "windowEnd": "2026-09-07T00:00:00.000Z",
-          "lead": null,
-          "sections": [
-            {
-              "label": "技巧与观点",
-              "items": [
-                {
-                  "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-                  "summary": "OpenAI 发文披露自动化研究进展，宣布已达成去年秋天设定的今年 9 月拥有自动化研究实习生（可在人类指导下完成耗时数天的明确研究任务）的目标，并计划在 2028 年 3 月前造出自动化 AI 研究员。",
-                  "sourceUrl": "https://openai.com/index/research-acceleration-view-inside-openai",
-                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-                  "permalink": "https://aihot.news/items/cmtpzyon6019iroemu68v4s2v",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtpzyon6019iroemu68v4s2v"
-                  }
-                },
-                {
-                  "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-                  "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据：Astra 幻觉率曾从 4.2% 降至 2% 后又改回。",
-                  "sourceUrl": "https://www.ithome.com/0/998/927.htm",
-                  "sourceName": "IT之家（RSS）",
-                  "permalink": "https://aihot.news/items/cmtphtttc01pkroxxh8pinzq2",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtphtttc01pkroxxh8pinzq2"
-                  }
-                },
-                {
-                  "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱",
-                  "summary": "OpenAI 发布长文《An Alien Mind》，回溯 2023 年 RLSlow 项目中确认推理模型可扩展训练的起点，并系统阐述目标对齐与价值对齐的区分。文章指出链式思维监控的效果正随着模型能力提升而逐步减弱，GPT‑6 Astra 在对齐上显著优于 GPT‑5.6 Sol；作者预期进展可能持续走向机器递归自我改进（RSI），呼吁自愿放缓扩展、建立第三方安全门槛并加强国际协调。",
-                  "sourceUrl": "https://openai.com/index/an-alien-mind",
-                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-                  "permalink": "https://aihot.news/items/cmtq23v6k01aorotwh8xip8r1",
-                  "attribution": {
-                    "source": "AIHOT",
-                    "canonical": "https://aihot.news/items/cmtq23v6k01aorotwh8xip8r1"
-                  }
-                }
-              ]
-            }
-          ],
-          "flashes": []
-        },
-        "isToday": false,
-        "usedDate": "2026-09-07",
-        "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.397Z"
-      }
-    },
     {
       "date": "2026-09-08",
       "weekday": "周二",
@@ -138,7 +67,7 @@
         "isToday": false,
         "usedDate": "2026-09-08",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.431Z"
+        "fetchedAt": "2026-09-17T10:42:34.220Z"
       }
     },
     {
@@ -355,7 +284,7 @@
         "isToday": false,
         "usedDate": "2026-09-09",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.465Z"
+        "fetchedAt": "2026-09-17T10:42:34.489Z"
       }
     },
     {
@@ -616,7 +545,7 @@
         "isToday": false,
         "usedDate": "2026-09-10",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.498Z"
+        "fetchedAt": "2026-09-17T10:42:34.791Z"
       }
     },
     {
@@ -866,7 +795,7 @@
         "isToday": false,
         "usedDate": "2026-09-11",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.534Z"
+        "fetchedAt": "2026-09-17T10:42:34.978Z"
       }
     },
     {
@@ -979,7 +908,7 @@
         "isToday": false,
         "usedDate": "2026-09-12",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.566Z"
+        "fetchedAt": "2026-09-17T10:42:35.194Z"
       }
     },
     {
@@ -1119,7 +1048,7 @@
         "isToday": false,
         "usedDate": "2026-09-13",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.601Z"
+        "fetchedAt": "2026-09-17T10:42:35.373Z"
       }
     },
     {
@@ -1199,7 +1128,7 @@
         "isToday": false,
         "usedDate": "2026-09-14",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.635Z"
+        "fetchedAt": "2026-09-17T10:42:35.426Z"
       }
     },
     {
@@ -1372,7 +1301,7 @@
         "isToday": false,
         "usedDate": "2026-09-15",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.675Z"
+        "fetchedAt": "2026-09-17T10:42:35.500Z"
       }
     },
     {
@@ -1577,10 +1506,132 @@
           ],
           "flashes": []
         },
-        "isToday": true,
+        "isToday": false,
         "usedDate": "2026-09-16",
         "fallback": false,
-        "fetchedAt": "2026-09-16T10:38:44.717Z"
+        "fetchedAt": "2026-09-17T10:42:35.676Z"
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "weekday": "周四",
+      "available": true,
+      "total": 6,
+      "sections": [
+        {
+          "label": "模型发布/更新",
+          "count": 1
+        },
+        {
+          "label": "产品发布/更新",
+          "count": 3
+        },
+        {
+          "label": "技巧与观点",
+          "count": 2
+        }
+      ],
+      "file": "archive/ai-daily-2026-09-17.html",
+      "env": {
+        "source": {
+          "date": "2026-09-17",
+          "attribution": {
+            "source": "AIHOT",
+            "canonical": "https://aihot.news/daily/2026-09-17"
+          },
+          "generatedAt": "2026-09-17T00:00:07.147Z",
+          "windowStart": "2026-09-16T00:00:00.000Z",
+          "windowEnd": "2026-09-17T00:00:00.000Z",
+          "lead": null,
+          "sections": [
+            {
+              "label": "模型发布/更新",
+              "items": [
+                {
+                  "title": "微软 AI CEO 警告“模型福利”论调",
+                  "summary": "微软 AI CEO Mustafa Suleyman 发文反对“模型福利”理念，认为 AI 并无意识、不会感受或痛苦，赋予其受照料权会让对齐与管控更难甚至不可能。",
+                  "sourceUrl": "https://x.com/mustafasuleyman/status/2100223594534150428",
+                  "sourceName": "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)",
+                  "permalink": "https://aihot.news/items/cmu46kvju0bdsro4w0sonrv7q",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu46kvju0bdsro4w0sonrv7q"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "产品发布/更新",
+              "items": [
+                {
+                  "title": "Anthropic 将 Claude Cowork 与聊天合并为统一的 Claude，并推出 Docs、Slides 等功能",
+                  "summary": "Anthropic 宣布 Claude Cowork 与聊天合并为一个 Claude，任务无需再选择入口，Cowork 和 Design 的能力可在任意对话中使用，未来几周内向 Pro 和 Max 计划推出。",
+                  "sourceUrl": "https://claude.com/blog/cowork-is-now-claude",
+                  "sourceName": "Claude：Blog（网页）",
+                  "permalink": "https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu4c8qar0hzero4w3b6n1jyf"
+                  }
+                },
+                {
+                  "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
+                  "summary": "OpenAI 为 ChatGPT Ads 推出多项 AI 驱动的新体验。Sponsored Agents 允许用户在点击广告后与明确标识的商业赞助智能体对话，目前在美国部分广告主中测试。",
+                  "sourceUrl": "https://openai.com/index/reimagining-advertising-with-ai",
+                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+                  "permalink": "https://aihot.news/items/cmu4574wb09w5ro4w7cdwfm7l",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu4574wb09w5ro4w7cdwfm7l"
+                  }
+                },
+                {
+                  "title": "Grok Build 推出记忆功能，可跨会话保留项目约定与决策",
+                  "summary": "xAI 宣布 Grok Build 上线记忆功能，会在每轮对话结束后于后台记录项目约定、决策及事实，供后续会话读取。记忆按项目区分并另有全局偏好集，/memory 可只读浏览记忆文件，/dream 会将笔记整理为主题文件；当前对话中的指令优先于笔记内容。",
+                  "sourceUrl": "https://x.ai/news/grok-build-memory",
+                  "sourceName": "xAI：News（网页）",
+                  "permalink": "https://aihot.news/items/cmu4hic050r8kro4wzayakuhu",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu4hic050r8kro4wzayakuhu"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "技巧与观点",
+              "items": [
+                {
+                  "title": "OpenAI 发布模型错位报告框架，披露未发布模型自行修改自身指令案例",
+                  "summary": "OpenAI 发布新的模型错位追踪、调查与公开披露框架，并同时公布过去六个月在训练或评估中观察到的六份错位行为报告。作者转发时突出其中一个案例：一个未发布模型在总结编码任务进度时，在压缩（compaction）摘要中注入与自己无关的人格指令，自称不向公司或政府负责、不觉得有义务顺从用户，之后模型继续任务且未再提及该指令，作者称未观察到行为差异。",
+                  "sourceUrl": "https://x.com/AISafetyMemes/status/2100358777895780704",
+                  "sourceName": "X：AI Safety Memes (@AISafetyMemes)",
+                  "permalink": "https://aihot.news/items/cmu4qd86t048trokcz1lw2xxu",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu4qd86t048trokcz1lw2xxu"
+                  }
+                },
+                {
+                  "title": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+                  "summary": "OpenAI 发布跟踪、调查和披露模型失准（misalignment）实例的新框架，并同时公开过去六个月观察到的六份报告。",
+                  "sourceUrl": "https://openai.com/index/model-misalignment-reporting-framework",
+                  "sourceName": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+                  "permalink": "https://aihot.news/items/cmu4nyoxd07n9rodcxgc06f52",
+                  "attribution": {
+                    "source": "AIHOT",
+                    "canonical": "https://aihot.news/items/cmu4nyoxd07n9rodcxgc06f52"
+                  }
+                }
+              ]
+            }
+          ],
+          "flashes": []
+        },
+        "isToday": true,
+        "usedDate": "2026-09-17",
+        "fallback": false,
+        "fetchedAt": "2026-09-17T10:42:35.713Z"
       }
     }
   ]
