@@ -4,7 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
-const BASE = "https://aihot.virxact.com";
+// 2026-10-31 起 aihot 迁移：aihot.virxact.com -> aihot.news，接口 /api/public/daily -> /api/v1/dailies
+const BASE = "https://aihot.news";
 const ROOT = path.resolve(__dirname, "..");
 const TPL = path.resolve(__dirname, "template.html");
 const ARCHIVE = path.join(ROOT, "archive");
@@ -28,7 +29,25 @@ async function getJSON(url) {
   return r.json();
 }
 
-function sectionStats(data) {
+// 新接口把数据包进 report 对象，且 item 字段名与旧版不同。
+// 统一解包并把新字段映射回 template 期望的形状（sourceName / sourceUrl / permalink）。
+function normalize(raw) {
+  const report = (raw && raw.report) ? raw.report : raw;
+  if (report && Array.isArray(report.sections)) {
+    report.sections.forEach(s => {
+      if (Array.isArray(s.items)) s.items.forEach(it => {
+        if (!it) return;
+        if (it.source && it.source.name && !it.sourceName) it.sourceName = it.source.name;
+        if (it.links && it.links.original && !it.sourceUrl) it.sourceUrl = it.links.original;
+        if (it.links && it.links.aihot && !it.permalink) it.permalink = it.links.aihot;
+      });
+    });
+  }
+  return report;
+}
+
+function sectionStats(raw) {
+  const data = (raw && raw.report) ? raw.report : raw;
   const secs = (data.sections || []).map(s => ({ label: s.label || "(未命名)", count: Array.isArray(s.items) ? s.items.length : 0 }));
   const total = secs.reduce((a, s) => a + s.count, 0);
   return { secs, total };
@@ -48,7 +67,7 @@ async function main() {
   for (const date of dates) {
     let data = null;
     try {
-      data = await getJSON(`${BASE}/api/public/daily/${date}`);
+      data = await getJSON(`${BASE}/api/v1/dailies/${date}`);
       const { total } = sectionStats(data);
       if (!data || total === 0) throw new Error("empty");
     } catch (e) {
@@ -56,7 +75,8 @@ async function main() {
       records.push({ date, weekday: weekday(date), available: false });
       continue;
     }
-    const env = { source: data, isToday: date === todayStr, usedDate: data.date || date, fallback: false, fetchedAt: new Date().toISOString() };
+    const report = normalize(data);
+    const env = { source: report, isToday: date === todayStr, usedDate: report.date || date, fallback: false, fetchedAt: new Date().toISOString() };
     const { secs, total } = sectionStats(data);
     console.log(`[ok] ${date}: ${total} 条`);
     records.push({ date, weekday: weekday(date), available: true, total, sections: secs, file: `archive/ai-daily-${date}.html`, env });
@@ -99,7 +119,7 @@ async function main() {
   const avail = records.filter(r => r.available);
   const totalAll = avail.reduce((a, r) => a + r.total, 0);
   let md = "# AI 日报 · 近 10 天记录\n\n";
-  md += `> 自动生成于 ${new Date().toISOString().replace("T", " ").slice(0, 16)} · 数据源：AI HOT（aihot.virxact.com）\n\n`;
+  md += `> 自动生成于 ${new Date().toISOString().replace("T", " ").slice(0, 16)} · 数据源：AI HOT（aihot.news）\n\n`;
   md += `**统计**：近 10 天共 ${records.length} 天，其中 ${avail.length} 天有收录，累计 ${totalAll} 条。\n\n`;
   md += `| 日期 | 星期 | 总条数 | 模型 | 产品 | 行业 | 论文 | 观点 | 页面 |\n`;
   md += `|---|---|---|---|---|---|---|---|---|\n`;
